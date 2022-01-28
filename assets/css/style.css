@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Righteous';
+}
+
+/*header*/
+
+#title h1 {
+    border-top: 2px solid rgb(233, 199, 10);
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: rgb(126, 157, 122);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+/*menu*/
+#menu {
+    letter-spacing: 5px;
+    padding: 0.55rem;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid rgb(233, 199, 10);
+    border-top: 2px solid rgb(233, 199, 10);
+    display: flex;
+    justify-content: center;
+}
+
+
+#menu li {
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    list-style-type: none;
+    margin: 10px 10px;
+    display: inline;
+    letter-spacing: 2px;
+}
+
+#menu a {
+    color: rgb(126, 157, 122);
+}
