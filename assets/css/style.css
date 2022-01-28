@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Righteous';
+}
+
+/*Header*/
+
+#title h1 {
+    border-top: 2px solid rgb(233, 199, 10);
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: rgb(126, 157, 122);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+/*Menu*/
+
+#menu {
+    letter-spacing: 5px;
+    padding: 0.55rem;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid rgb(233, 199, 10);
+    border-top: 2px solid rgb(233, 199, 10);
+    display: flex;
+    justify-content: center;
+}
+
+
+#menu li {
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    list-style-type: none;
+    margin: 10px 10px;
+    display: inline;
+    letter-spacing: 2px;
+}
+
+#menu a {
+    color: rgb(126, 157, 122);
+}
+
+/*Hero image*/
+
+#hero-image {
+    margin-top: 0.5rem;
+    background: url('../images/scenery.jpeg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+/* Footer */
+
+.footer {
+    margin: 1rem 0;
+    border-top: 2px solid rgb(233, 199, 10);
+    border-bottom: 2px solid rgb(233, 199, 10)
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+
+.social-networks i {
+    list-style: none;
+    margin: 15px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(126, 157, 122);
+    border: 2px solid rgb(126, 157, 122);
+    border-radius: 50%;
+}
+
+.social-networks i:hover {
+    color: rgb(51, 102, 0, 0.8);
+    border-color: rgb(51, 102, 0, 0.8);
+}
