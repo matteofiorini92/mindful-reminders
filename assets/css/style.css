@@ -62,3 +62,38 @@ h1 {
     width: 100%;
     background-attachment: fixed;
 }
+
+/* Footer */
+
+.footer {
+    /* height: 75px;
+    padding: 25px; */
+    margin: 1rem 0;
+    border-top: 2px solid rgb(233, 199, 10);
+    border-bottom: 2px solid rgb(233, 199, 10)
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+
+.social-networks i {
+    list-style: none;
+    margin: 15px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(126, 157, 122);
+    border: 2px solid rgb(126, 157, 122);
+    border-radius: 50%;
+}
+
+.social-networks i:hover {
+    color: rgb(51, 102, 0, 0.8);
+    border-color: rgb(51, 102, 0, 0.8);
+}
