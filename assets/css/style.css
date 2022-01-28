@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:wght@300&family=Righteous&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@
 
 body {
     font-size: 1em;
+    font-family: 'Amatic SC';
 }
 
 h1 {
@@ -62,7 +63,39 @@ h1 {
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
+    padding: 3rem 0;
 }
+
+/*Tips*/
+
+#tips-main {
+    background-color: rgb(126, 157, 122, 0.6);
+    color: blanchedalmond;
+    text-align: center;
+    border-radius: 35px;
+    padding: 5rem 2rem;
+    margin: 10rem auto;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    overflow: scroll;
+    width: 50rem;
+    max-width: 80vw;
+    max-height: 70vh;
+}
+
+#tips-main h2 {
+    font-family: 'Righteous';
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#tips-main p {
+    padding: 1rem;
+    text-align: center;
+    color: blanchedalmond;
+}
+
 
 /* Footer */
 
@@ -96,3 +129,7 @@ h1 {
     color: rgb(51, 102, 0, 0.8);
     border-color: rgb(51, 102, 0, 0.8);
 }
+
+/*Media queries*/
+
+@media screen {}
