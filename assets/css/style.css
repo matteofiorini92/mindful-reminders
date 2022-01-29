@@ -68,7 +68,8 @@ body {
     width: 600px;
     max-width: 100%;
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 8rem;
+    
 
 }
 
@@ -174,6 +175,7 @@ header {
     border-radius: 35px;
     padding: 5rem 2rem;
     margin: 10rem auto;
+    margin-top: 2rem;
     font-family: 'Open Sans';
     font-size: 1.5rem;
     overflow: scroll;
