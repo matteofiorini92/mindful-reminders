@@ -20,19 +20,17 @@ let name;
 let daystart;
 let lunchbreak;
 let dayend;
-
+let toStopReminder = false;
+let lastReminder= "";
 let time = tipInterval;
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
 });
 
-// close.addEventListener('click', () => {
-//     modal_container.classList.remove('show');
-// });
-
 closeReminder.addEventListener('click', () => {
   reminderModalEl.classList.remove('show');
+  toStopReminder = true;
 });
 
 planForm.addEventListener('submit', (e) => {
@@ -44,16 +42,10 @@ planForm.addEventListener('submit', (e) => {
   lunchbreak = data['lunchbreak'].value;
   dayend = data['dayend'].value;
   modal_container.classList.remove('show');
-  console.log(name, daystart, lunchbreak, dayend);
-  console.log(typeof dayend);
+  startReminderTimer();
   getTime();
 });
 
-function processForm() {
-  console.log("processed form")
-  modal_container.classList.remove('show');
-
-}
 const startTimer = function () {
   const tick = function () {
     const hour = String(Math.trunc(time / 3600)).padStart(2, 0);
@@ -64,9 +56,7 @@ const startTimer = function () {
     hour > 0 ?
       (timerEl.textContent = `${hour}:${min}:${sec}`) :
       (timerEl.textContent = `${min}:${sec}`);
-    if (getTime() == lunchbreak) {
-      displayReminder();
-    }
+
     // When 0 seconds, restart timer and display another tip
     if (time === 0) {
       time = tipInterval;
@@ -81,6 +71,23 @@ const startTimer = function () {
   return timer;
 };
 
+
+const startReminderTimer = function () {
+  const tick = function () {
+    const time = getTime();
+    if (time === lunchbreak) {
+      displayReminder("lunch");
+    } else if (time === dayend) {
+      displayReminder("dayend");
+    } else if (time === daystart) {
+      displayReminder("daystart");
+    }
+  };
+  // Call the timer every second
+  tick();
+  const timer = setInterval(tick, 1000);
+  return timer;
+};
 
 const init = function () {
   modal_container.classList.add('show');
@@ -98,7 +105,6 @@ const getTipToDisplay = function () {
 
 const displayTip = function () {
   tipsEl.style.display = "block";
-  console.log("at display tip");
   const explainDiv = document.createElement("div");
   const divExists = tipsEl.firstChild;
   if (divExists) {
@@ -109,19 +115,33 @@ const displayTip = function () {
   tipsEl.insertAdjacentElement("afterbegin", explainDiv);
 };
 
-const displayReminder = function () {
-  reminderContEl.style.display = "block";
-  console.log("at reminder tip");
-  const contentDiv = document.createElement("div");
-  const divExists = reminderContEl.firstChild;
-  if (divExists) {
-    reminderContEl.firstChild.remove();
+const displayReminder = function (period) {
+  if (period !== lastReminder){
+    toStopReminder = false;
+    lastReminder = period;
   }
-  contentDiv.innerHTML = "Please have your lunch";
-  contentDiv.textAlign = "center";
-  reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
-  reminderAudioEl.play();
-  reminderModalEl.classList.add('show');
+  if (!toStopReminder) {
+    reminderContEl.style.display = "block";
+    const contentDiv = document.createElement("div");
+    const divExists = reminderContEl.firstChild;
+    if (divExists) {
+      reminderContEl.firstChild.remove();
+    }
+    if (period === "daystart") {
+      contentDiv.innerHTML = "Welcome to work! Please remember to do your exercises";
+    } else if (period === "lunch") {
+      contentDiv.innerHTML = "It is time for lunch! Please have something to eat! and do some exercises";
+    } else if (period === "dayend") {
+      contentDiv.innerHTML = "Lovely time of them all. Please proceed home!!!";
+    }
+    contentDiv.textAlign = "center";
+    reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
+    reminderAudioEl.play();
+    lastReminder = period;
+    reminderModalEl.classList.add('show');
+
+  }
+
 };
 
 function getTime() {
