@@ -114,6 +114,26 @@ In order to clone the project, the following steps are to be followed:
 
 ### Content  
 
+Research was conducted into all aspects of the theme of Workforce Wellbeing and Mindfulness, including beneficial techniques and Colour Therapy.  
+
+Content to create the Mindful Tips and other research used building the site have been cited from the resources below:
+
+- [Very Well Mind](https://www.verywellmind.com/abdominal-breathing-2584115)
+- [Respiratory Cram](https://respiratorycram.com/best-breathing-exercises/)
+- [Science Alert](https://www.sciencealert.com/just-looking-at-photos-of-nature-could-be-enough-to-lower-your-work-stress-levels)
+- [Medical News Today](https://www.medicalnewstoday.com/articles/321805#the-box-breathing-method)
+- [Divine Feminine Wellness](https://divinefemininede.com/4-7-8-breathing/)
+- [Human Givens Institute](https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep)
+- [PubMed](https://pubmed.ncbi.nlm.nih.gov/30073406/)
+- [Scientific Research Publishing Inc.](https://www.scirp.org/journal/paperinformation.aspx?paperid=87146)
+- [Tiny Pulse](https://www.tinypulse.com/blog/sk-desk-exercises)
+- [Fitbit](https://blog.fitbit.com/desk-exercises/)
+- [Inc.](https://www.inc.com/kenny-kline/9-exercises-you-can-do-in-your-office.html)
+- [Advanced Eyecare & Aesthetics](https://advancedeyecaremd.net/20-20-20-tipstopreventeyestrain/)
+- [Employee Benefits](https://employeebenefits.co.uk/mindfulness-matters-implement-employees/#:~:text=Studies%20also%20show%20that%20practicing,and%20more%20engaged%20at%20work.)
+- [CALM](https://www.thecalmzone.net/issues/anxiety/)
+- [Mind](https://www.mind.org.uk/need-urgent-help/what-can-i-do-to-help-myself-cope/relaxing-and-calming-exercises/)
+
 #### Research
 
 
@@ -122,6 +142,8 @@ In order to clone the project, the following steps are to be followed:
 - [GitHub](https://github.com/matteofiorini92/hackathon-jan-2022) was used to build and deploy the site.
 - [Figma](https://www.figma.com/file/Yq3yHWL6sBYViIDbZMPn7B/Hackathon-2022?node-id=0%3A1) was used to collate ideas and research for the project.
 - [Colour Contrast Checker](https://colourcontrast.cc/e5eff8/3d523a) was used to check the colour scheme against WCAG guidelines.
+- Fonts used on the site were taken from [Google Fonts](https://fonts.google.com/).
+- 
 
 
 ### Media  
