@@ -1,1 +1,1 @@
-export const TIPS_INTERVAL = 60;
+export const TIPS_INTERVAL = 30;

@@ -2,113 +2,127 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="#">
-  <meta name="keywords" content="wellness, mental-health, mindfulness, workplace">
-  <meta name="author" content="mindful reminders">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta name="keywords" content="wellness, mental-health, mindfulness, workplace">
+    <meta name="author" content="mindful reminders">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <title>Mindful Reminders</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Mindful Reminders</title>
 </head>
 
 <body>
 
-  <header>
+    <header>
 
-    <div id='title'>
-      <a href='./index.html'>
-        <h1>mindful reminders</h1>
-      </a>
-    </div>
-
-    <nav id="menu">
-      <ul class="nav-menu">
-        <li>
-          <a href="index.html" class="active">Home</a>
-        </li>
-        <li><a href='#'>Resources</a></a></li>
-        <li><span id="open" class="button-1">
-          <i class="fas fa-cog"></i>
-        </span></li>
-      </ul>
-    </nav>
-
-  </header>
-
-
-<div class="modal-container" id="modal_container">
-  <div class="modal">
-    <h1>Plan your Day!</h1>
-    <section>
-    <div class="container">
-      <form action="">
-        <div class="form-group">
-          <label for="Name">Name</label>
-          <input type="text" class="time" id="Name" name="Name" required>
-        </div>
-        <div class="form-group">
-          <label for="day-start">When does your work day start</label>
-          <input type="time" class="time" id="day-start" name=daystart required>
+        <div id='title'>
+            <a href='./index.html'>
+                <h1>mindful reminders</h1>
+            </a>
         </div>
 
-        <div class="form-group">
-          <label for="lunchbrek">When is your lunch break</label>
-          <input type="time" class="time" id="lunch-break" name=lunchbreak required>
+        <nav id="menu">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li><a href='#'>Resources</a></a></li>
+                <li><span id="open" class="button-1">
+                        <i class="fas fa-cog"></i>
+                    </span></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Plan your Day!</h1>
+            <section>
+                <div class="container">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="time" id="Name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="day-start">When does your work day start</label>
+                            <input type="time" class="time" id="day-start" name=daystart required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lunchbrek">When is your lunch break</label>
+                            <input type="time" class="time" id="lunch-break" name=lunchbreak required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="day-end" class=>When does your work day end</label>
+                            <input type="time" class="time" id="day-end" name=dayend required>
+                        </div>
+
+                    </form>
+                    <button id="close" class="button-2">Set Reminders</button>
+
+                </div>
+        </div>
+    </div>
+    </section>
+    <section id="main">
+
+        <div id="hero-image">
+
+            <div id="tips-main">
+                <span id="times"></span>
+            </div>
         </div>
 
-        <div class="form-group">
-          <label for="day-end" class=>When does your work day end</label>
-          <input type="time" class="time" id="day-end" name=dayend required>
+        <div class="modal-container" id="modal_reminder">
+            <div class="modal">
+                <h1 id="reminder-header">Reminder!</h1>
+                <div class="container" id="reminder-content">
+                    <button class="close button-2">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- Audio elements -->
+        <audio id="reminder-audio">
+            <source src="assets/media/mixkit-uplifting-flute.wav" type="audio/wav" />
+        </audio>
+    </section>
+
+    <footer>
+
+        <div class="footer">
+            <ul class="social-networks">
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit or Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit or Twitter page (opens in a new tab)"><i
+                            class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit or YouTube page (opens in a new tab)"><i
+                            class="fab fa-youtube-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit or Instagram page (opens in a new tab)"><i
+                            class="fab fa-instagram-square"></i></a>
+                </li>
+            </ul>
         </div>
 
-      </form>
-      <button id="close" class="button-2">
-       Set Reminders
-  </button>
-    
-    </div>
-  </div>
-</div>
-</section>
-  <section id="main">
-
-    <div id="hero-image">
-
-      <div id="tips-main">
-        <span id="times"></span>
-      </div>
-    </div>
-
-  </section>
-
-  <footer>
-
-    <div class="footer">
-      <ul class="social-networks">
-        <li>
-          <a href="https://facebook.com" target="_blank" rel="noopener"
-            aria-label="Visit or Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank" rel="noopener"
-            aria-label="Visit or Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-        </li>
-        <li>
-          <a href="https://youtube.com" target="_blank" rel="noopener"
-            aria-label="Visit or YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-        </li>
-        <li>
-          <a href="https://instagram.com" target="_blank" rel="noopener"
-            aria-label="Visit or Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
-        </li>
-      </ul>
-    </div>
-
-  </footer>
-  <script src="assets/js/script.js" type="module"></script>
+    </footer>
+    <script src="assets/js/script.js" type="module"></script>
 </body>
+
 </html>

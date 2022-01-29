@@ -5,6 +5,13 @@ const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 const tipsEl = document.getElementById("tips-main");
 const timerEl = document.getElementById("times");
+
+const reminderContEl = document.querySelector("#reminder-content");
+const reminderHeadEl = document.querySelector("#reminder-header");
+const reminderAudioEl = document.querySelector("#reminder-audio");
+const reminderModalEl = document.querySelector("#modal_reminder");
+const closeReminder = document.querySelector('.close');
+
 let time = tipInterval;
 
 open.addEventListener('click', () => {
@@ -13,6 +20,10 @@ open.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
+});
+
+closeReminder.addEventListener('click', () => {
+  reminderModalEl.classList.remove('show');
 });
  
 const startTimer = function () {
@@ -29,7 +40,8 @@ const startTimer = function () {
     // When 0 seconds, restart timer and display another tip
     if (time === 0) {
       time = tipInterval;
-      displayTip();
+      displayReminder();
+      // displayTip();
     }
     // Decrease 1s
     time--;
@@ -65,4 +77,19 @@ const displayTip = function () {
   explainDiv.innerHTML = tipsData[getTipToDisplay()].detail;
   explainDiv.textAlign = "center";
   tipsEl.insertAdjacentElement("afterbegin", explainDiv);
+};
+
+const displayReminder = function () {
+  reminderContEl.style.display = "block";
+  console.log("at reminder tip");
+  const contentDiv = document.createElement("div");
+  const divExists = reminderContEl.firstChild;
+  if (divExists) {
+    reminderContEl.firstChild.remove();
+  }
+  contentDiv.innerHTML = "Please have your lunch";
+  contentDiv.textAlign = "center";
+  reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
+  reminderAudioEl.play();
+  reminderModalEl.classList.add('show');
 };
