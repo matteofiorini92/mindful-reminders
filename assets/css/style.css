@@ -9,22 +9,26 @@
 
 body{
     font-family: 'Amatic SC';    
-    display: flex;
+   
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
 
 }
-button{
-    background-color: #d8e2cd;
+.button-2{
+    background-color: rgb(126, 157, 122, 0.6);
     color: black;
     border: 0;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.2);
     color: black;
     font-size: 14px;
-    padding: 10px 25px;
+    padding: 20px 35px;
+}
+.button-1{
+    background-color: #fff;
+    cursor: pointer;
 }
 .modal-container{
     display: flex;
@@ -51,6 +55,7 @@ button{
     width: 600px;
     max-width: 100%;
     text-align: center;
+    margin-top: 15rem;
 
 }
 
@@ -87,10 +92,13 @@ section{
  border-radius: 10px;
  background-color: #ffe5d9;
  padding-top: 10px;
+ padding-bottom: 10px;
 
 }
 label{
     display: block;
+    padding-bottom: 15px;
+    
 }
 
 

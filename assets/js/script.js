@@ -40,7 +40,13 @@ const startTimer = function () {
   return timer;
 };
 
-document.addEventListener("DOMContentLoaded", startTimer);
+
+const init = function(){
+  modal_container.classList.add('show');
+  startTimer();
+}
+
+document.addEventListener("DOMContentLoaded", init);
 
 const getTipToDisplay = function () {
   const unusedTips = tipsData.filter((data) => !data.used);
