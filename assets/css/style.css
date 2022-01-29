@@ -7,34 +7,46 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Amatic SC';    
-   
+body {
+    background: url('../images/scenery.jpeg') no-repeat center / cover;
+    background-attachment: fixed;
+    font-family: 'Amatic SC';
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-
 }
-.button-2{
+
+#main {
+    height: 100vh;
+}
+
+/*Modal*/
+
+.button-2 {
     background-color: rgb(126, 157, 122, 0.6);
     color: black;
     border: 0;
     border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.2);
+    box-shadow: rgba(0, 0, 0, 0.2);
     color: black;
     font-size: 14px;
     padding: 20px 35px;
 }
-.button-1{
-    background-color: #fff;
+
+.button-1 {
     cursor: pointer;
 }
-.modal-container{
+
+.fas {
+    color: rgb(126, 157, 122);
+}
+
+.modal-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     opacity: 0;
     pointer-events: none;
@@ -43,13 +55,14 @@ body{
     height: 100vh;
     width: 100vw;
 }
-.modal-container.show{
+
+.modal-container.show {
     pointer-events: auto;
     opacity: 1;
 }
 
-.modal{
-    background-color:#f5dce1;
+.modal {
+    background-color: #f5dce1;
     border-radius: 10px;
     padding: 30px 50px;
     width: 600px;
@@ -68,18 +81,19 @@ body{
     font-size: 14px;
     opacity: 0.7;
 }
-section{
+
+section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container{
+.container {
     margin: 0 auto;
     padding: 20px;
 }
 
-.form-group{
+.form-group {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
@@ -88,20 +102,20 @@ section{
 
 
 }
-.time{
- border-radius: 10px;
- background-color: #ffe5d9;
- padding-top: 10px;
- padding-bottom: 10px;
+
+.time {
+    border-radius: 10px;
+    background-color: #ffe5d9;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
-label{
+
+label {
     display: block;
     padding-bottom: 15px;
-    
+
 }
-
-
 
 
 h1 {
@@ -110,13 +124,18 @@ h1 {
 
 /*Header*/
 
+header {
+    border: 2px solid rgb(233, 199, 10);
+    border-radius: 40px;
+    margin: 1rem;
+}
+
 #title h1 {
-    border-top: 2px solid rgb(233, 199, 10);
+    border-radius: 40px;
     margin-top: 1rem;
     padding: 1rem;
     font-size: 3rem;
     color: rgb(126, 157, 122);
-    background-color: rgb(255, 255, 255);
     font-family: 'Righteous';
     text-align: center;
 }
@@ -126,9 +145,7 @@ h1 {
 #menu {
     letter-spacing: 5px;
     padding: 0.55rem;
-    margin-top: 0.5rem;
-    border-bottom: 2px solid rgb(233, 199, 10);
-    border-top: 2px solid rgb(233, 199, 10);
+    border-radius: 60px;
     display: flex;
     justify-content: center;
 }
@@ -147,23 +164,12 @@ h1 {
     color: rgb(126, 157, 122);
 }
 
-/*Hero image*/
-
-#hero-image {
-    margin-top: 0.5rem;
-    background: url('../images/scenery.jpeg') no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    padding: 3rem 0;
-}
 
 /*Tips*/
 
 #tips-main {
     background-color: rgb(126, 157, 122, 0.6);
-    color: blanchedalmond;
+    color: #ffebcd;
     text-align: center;
     border-radius: 35px;
     padding: 5rem 2rem;
@@ -186,16 +192,16 @@ h1 {
 #tips-main p {
     padding: 1rem;
     text-align: center;
-    color: blanchedalmond;
+    color: #ffebcd;
 }
 
 
 /* Footer */
 
 .footer {
-    margin: 1rem 0;
     border-top: 2px solid rgb(233, 199, 10);
-    border-bottom: 2px solid rgb(233, 199, 10)
+    border-bottom: 2px solid rgb(233, 199, 10);
+    background-color: #fff;
 }
 
 .social-networks {
@@ -204,6 +210,7 @@ h1 {
 
 .social-networks>li {
     display: inline;
+    padding: 1rem;
 }
 
 
@@ -212,7 +219,7 @@ h1 {
     margin: 15px 30px;
     display: inline-block;
     font-size: 20px;
-    padding: 5px;
+    padding: 8px;
     color: rgb(126, 157, 122);
     border: 2px solid rgb(126, 157, 122);
     border-radius: 50%;
@@ -224,4 +231,3 @@ h1 {
 }
 
 /*Media queries*/
-
