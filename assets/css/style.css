@@ -4,12 +4,97 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-body {
-    font-size: 1em;
-    font-family: 'Amatic SC';
+body{
+    font-family: 'Amatic SC';    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
 }
+button{
+    background-color: #d8e2cd;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2);
+    color: black;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal{
+    background-color:#f5dce1;
+    border-radius: 10px;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.modal h1 {
+    margin: 0;
+
+}
+
+.modal p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+
+
+}
+.time{
+ border-radius: 10px;
+ background-color: #ffe5d9;
+ padding-top: 10px;
+
+}
+label{
+    display: block;
+}
+
+
+
 
 h1 {
     font-family: 'Righteous';
@@ -132,4 +217,3 @@ h1 {
 
 /*Media queries*/
 
-@media screen {}

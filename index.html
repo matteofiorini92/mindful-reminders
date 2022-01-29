@@ -17,7 +17,6 @@
 
 <body>
 
-
   <header>
 
     <div id='title'>
@@ -37,6 +36,43 @@
 
   </header>
 
+<button id="open">
+    Get Started! 
+</button>
+<div class="modal-container" id="modal_container">
+  <div class="modal">
+    <h1>Modal form</h1>
+    <section>
+    <div class="container">
+      <form action="">
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input type="text" class="time" id="Name" name="Name" required>
+        </div>
+        <div class="form-group">
+          <label for="day-start">When does your work day start</label>
+          <input type="time" class="time" id="day-start" name=daystart required>
+        </div>
+
+        <div class="form-group">
+          <label for="lunchbrek">When is your lunch break</label>
+          <input type="time" class="time" id="lunch-break" name=lunchbreak required>
+        </div>
+
+        <div class="form-group">
+          <label for="day-end" class=>When does your work day end</label>
+          <input type="time" class="time" id="day-end" name=dayend required>
+        </div>
+
+      </form>
+      <button id="close">
+        close me
+  </button>
+    
+    </div>
+  </div>
+</div>
+</section>
   <section id="main">
 
     <div id="hero-image">
@@ -72,10 +108,6 @@
     </div>
 
   </footer>
-
-
   <script src="assets/js/script.js" type="module"></script>
-
 </body>
-
 </html>
