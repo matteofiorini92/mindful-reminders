@@ -132,11 +132,14 @@ export const tipsData = [
       {
         id: 15, // uniquely identify this tip
         used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-        detail: `<h2>Seated Secret Core</h2>
+        detail: `<article><h2>Seated Secret Core</h2>
         <p>Sit tall in your chair with your pelvis slightly tilted forward. Pull your belly button up and in. Remember to brace your core (imagine getting ready for someone to hit your belly).
           </p>
         <p> Hold for 10 to 15 seconds, then relax for a breath or two. Repeat five times.
-          </p>`,
+          </p></article>,
+                <article><h2>4-7-8 Breathing</h2><p> Take a deep inhale, counting to four. Hold your breath for seven seconds.Slowly exhale for a count of eight.
+          </p>
+          <p>Repeat these steps for four minutes or until you feel a sense of relaxation.</p></article>`
       },
       {
         id: 16, // uniquely identify this tip
