@@ -2,6 +2,7 @@
 
 ## Table of Contents  
 <!-- TOC -->
+
 - [Mindful Reminders](#mindful-reminders)
   - [Table of Contents](#table-of-contents)
   - [Objective](#objective)
@@ -24,6 +25,7 @@
     - [Technologies Used](#technologies-used)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
+
 <!-- /TOC -->
 
 ## Objective  
