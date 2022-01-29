@@ -32,6 +32,7 @@ body {
     color: black;
     font-size: 14px;
     padding: 20px 35px;
+    cursor: pointer;
 }
 
 .button-1 {
