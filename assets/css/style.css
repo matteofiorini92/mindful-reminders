@@ -169,8 +169,8 @@ header {
 /*Tips*/
 
 #tips-main {
-    background-color: rgb(126, 157, 122, 0.6);
-    color: #ffebcd;
+    background-color: rgb(126, 157, 122, 0.8);
+    color: rgb(0,0,0);         /*: #ffebcd;*/
     text-align: center;
     border-radius: 35px;
     padding: 5rem 2rem;
@@ -194,7 +194,7 @@ header {
 #tips-main p {
     padding: 1rem;
     text-align: center;
-    color: #ffebcd;
+    color: rgb(0,0,0);   /*: #ffebcd;*/
 }
 
 
