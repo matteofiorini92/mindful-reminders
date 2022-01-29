@@ -70,8 +70,7 @@ const startTimer = function () {
     // When 0 seconds, restart timer and display another tip
     if (time === 0) {
       time = tipInterval;
-
-      // displayTip();
+      displayTip();
     }
     // Decrease 1s
     time--;
@@ -85,7 +84,7 @@ const startTimer = function () {
 
 const init = function () {
   modal_container.classList.add('show');
-  // planForm.action = processForm();
+  displayTip();
   startTimer();
 }
 
