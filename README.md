@@ -34,7 +34,7 @@
 
 #### Research
 
-### Technologes Used  
+### Technologies Used  
 
 ### Media  
 
