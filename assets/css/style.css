@@ -84,6 +84,12 @@ body {
     opacity: 0.7;
 }
 
+#modal_reminder{
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(126, 157, 122);
+    font-family: 'Open Sans';
+}
 section {
     display: flex;
     align-items: center;
@@ -174,12 +180,12 @@ header {
     color: rgb(0,0,0);         /*: #ffebcd;*/
     text-align: center;
     border-radius: 35px;
-    padding: 5rem 2rem;
-    margin: 10rem auto;
-    margin-top: 2rem;
+    padding: 2rem;
+    /* margin: 5rem auto; */
+    /* margin-top: 2rem; */
     font-family: 'Open Sans';
     font-size: 1.5rem;
-    overflow: scroll;
+    /* overflow: scroll; */
     width: 50rem;
     max-width: 80vw;
     max-height: 70vh;
