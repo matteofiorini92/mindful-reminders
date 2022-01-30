@@ -106,7 +106,9 @@ const startReminderTimer = function () {
 
 const init = function () {
   getUser();
-  modal_container.classList.add('show');
+  if (!name) {
+    modal_container.classList.add('show');
+  }
   displayTip();
   startTimer();
 }
