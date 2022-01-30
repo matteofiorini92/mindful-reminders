@@ -277,3 +277,10 @@ header {
             font-size: 18px;
         }
     }
+
+    @media screen and (max-width: 526px) {
+
+        .social-networks li {
+            padding: 3px;
+        }
+    }
