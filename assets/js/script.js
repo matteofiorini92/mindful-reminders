@@ -76,12 +76,26 @@ const startTimer = function () {
 const startReminderTimer = function () {
   const tick = function () {
     const time = getTime();
+    let now = new Date();
+    let today = new Date();
+    let day = today.getDate().toString();
+    let month = (today.getMonth() + 1).toString();
+    let year = today.getFullYear();
+    let todayAsStr = today.toString();
+    day = day.length == 1 ? '0' + day : day;
+    month = month.length == 1 ? '0' + month : month;
+    // get startTime as datetime object
+    let startTime = Date.parse(year + '-' + month + '-' + day + 'T' + daystart + ':00.000' + todayAsStr[28] + todayAsStr[29] + todayAsStr[30] + ':00');
+    now.setSeconds(0);
+    now.setMilliseconds(0);
     if (time === lunchbreak) {
       displayReminder("lunch");
     } else if (time === dayend) {
       displayReminder("dayend");
     } else if (time === daystart) {
       displayReminder("daystart");
+    } else if ((now - startTime) % 1200000 === 0) {
+      displayReminder("twenty");
     }
   };
   // Call the timer every second
@@ -137,6 +151,8 @@ const displayReminder = function (period) {
       contentDiv.innerHTML = `${getGreeting()}It is time for lunch! Please have something to eat! and do some exercises`;
     } else if (period === "dayend") {
       contentDiv.innerHTML = `${getGreeting()} Lovely time of them all. Please proceed home!!!`;
+    } else if (period === "twenty") {
+      contentDiv.innerHTML = `You've been staring at the screen for 20 minutes, look 20 feet away for 20 seconds!`;
     }
     contentDiv.textAlign = "center";
     reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
