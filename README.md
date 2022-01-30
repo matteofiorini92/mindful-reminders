@@ -9,10 +9,12 @@
   - [Objective](#objective)
   - [User Experience](#user-experience)
     - [User Stories](#user-stories)
+    - [Wireframes](#wireframes)
   - [Design](#design)
     - [Colour Scheme](#colour-scheme)
   - [Features](#features)
     - [Homepage](#homepage)
+    - [Future Features](#future-features)
   - [Testing](#testing)
     - [Validator Testing](#validator-testing)
     - [Accessibility](#accessibility)
@@ -23,7 +25,6 @@
     - [Cloning](#cloning)
   - [Credits](#credits)
     - [Content](#content)
-      - [Research](#research)
     - [Technologies Used](#technologies-used)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
@@ -46,6 +47,8 @@ Mindful Reminders is a platform that provides its user with the opportunity to i
   - Remember to take my breaks, for food and water.
   - Bring more structure into my personal and professional life.
 
+### Wireframes
+
 ## Design  
 
 ### Colour Scheme
@@ -60,7 +63,15 @@ Research conducted by Chromatherapists suggests that using shades of blue, green
 
 The homepage contains a background image of a yellow toned nature scene that aims to evoke a sense of calm. The charity Mind states that bringing nature into your everyday life can benefit both your mental and physical wellbeing. During a workday, people may not have the opportunity to be present in nature. However, researchers led by Vrije University Medical Centre in the Netherlands conducted a study that shows that even just looking at images of nature could be enough to lower work stress levels. 
 
-The Homepage contains the title, Mindful Reminders, a navigation bar and a modal pop-up form appears on opening the webpage prompting the user to set their reminders up for the day.
+The Homepage contains the title, Mindful Reminders, a navigation bar and a modal pop-up form that appears on opening the webpage prompting the user to set their work schedule which will generate their reminders for the day.
+
+### Future Features  
+
+Time constraints prevented us from building a site containing the full scope of ideas we came up with. Below are the features we would plan to implement in the future.
+
+- A GPS feature that takes the user's location and provides them with a list of local support options and resources. This would further boost Mindful Reminder's advocacy for the wellbeing of the user if mindful exercises are not enough to maintain the balance in their life that they require.
+  
+- A wider range of mindful tips to provide more variety to the user. Whilst practicing activities such as breathing techniques and exercise is cited by many as effective in bolstering wellbeing and mental health, particularly if practiced regularly which this app aims to encourage; we understand that many other techniques may also be helpful. Mindful Reminders would like to provide that variation and support to its users.
 
 ## Testing
 
@@ -114,9 +125,9 @@ In order to clone the project, the following steps are to be followed:
 
 ### Content  
 
-Research was conducted into all aspects of the theme of Workforce Wellbeing and Mindfulness, including beneficial techniques and Colour Therapy.  
+Much research was conducted into the theme of Workforce Wellbeing and Mindfulness to ensure the viability of this project in providing clear and substantial value to the intended user.
 
-Content to create the Mindful Tips and other research used building the site have been cited from the resources below:
+Content to create the Mindful Tips and other research used in building the site have been cited from the resources below:
 
 - [Very Well Mind](https://www.verywellmind.com/abdominal-breathing-2584115)
 - [Respiratory Cram](https://respiratorycram.com/best-breathing-exercises/)
@@ -131,20 +142,19 @@ Content to create the Mindful Tips and other research used building the site hav
 - [Inc.](https://www.inc.com/kenny-kline/9-exercises-you-can-do-in-your-office.html)
 - [Advanced Eyecare & Aesthetics](https://advancedeyecaremd.net/20-20-20-tipstopreventeyestrain/)
 - [Employee Benefits](https://employeebenefits.co.uk/mindfulness-matters-implement-employees/#:~:text=Studies%20also%20show%20that%20practicing,and%20more%20engaged%20at%20work.)
+- [The Wellbeing Thesis](https://thewellbeingthesis.org.uk/foundations-for-success/stress/emotional-hi-jacking/)
 - [CALM](https://www.thecalmzone.net/issues/anxiety/)
 - [Mind](https://www.mind.org.uk/need-urgent-help/what-can-i-do-to-help-myself-cope/relaxing-and-calming-exercises/)
-
-#### Research
 
 
 ### Technologies Used  
 
-- [GitHub](https://github.com/matteofiorini92/hackathon-jan-2022) was used to build and deploy the site.
+- [GitHub](https://github.com/matteofiorini92/hackathon-jan-2022) was used to build, plan and deploy the site.
 - [Figma](https://www.figma.com/file/Yq3yHWL6sBYViIDbZMPn7B/Hackathon-2022?node-id=0%3A1) was used to collate ideas and research for the project.
 - [Colour Contrast Checker](https://colourcontrast.cc/e5eff8/3d523a) was used to check the colour scheme against WCAG guidelines.
 - Fonts used on the site were taken from [Google Fonts](https://fonts.google.com/).
-- 
-
+- [Colour Contrast Checker](https://colourcontrast.cc/425d3e/ffffff) was used to check colours against WCAG standards.
+- [Coolors.io](https://coolors.co/446040-e9c70a-cf9661-e8deb1-f5dce1-ffffff-e5eff8) was used to generate a colour palette for the site.
 
 ### Media  
 
