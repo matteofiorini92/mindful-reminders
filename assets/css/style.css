@@ -259,10 +259,12 @@ header {
 
     #tips-main {
         transform: scale(.9);
+        z-index: -1;
     }
 
     #tips-main p {
         transform: scale(.9);
+        z-index: -1;
         font-size: 1.2rem;
     }
 
