@@ -298,3 +298,61 @@ export const tipsData = [{
 
 
 ];
+
+export const wellnessFactsData = [{
+  id: 0, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Laughing is good for the heart and can increase blood flow by 20 percent.`,
+},
+{
+  id: 1, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Exercise will give you more energy, even when you’re tired.`,
+},
+{
+  id: 2, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Yoga can boost your cognitive function and lower stress.`,
+},
+{
+  id: 3, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Walking outside – or spending time in green space – can reduce negative thoughts and boost self-esteem.`,
+},
+{
+  id: 4, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Drinking at least five glasses of water a day can reduce your chances of suffering from a heart attack by 40%.`,
+},
+{
+  id: 5, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Research has found that taking a break can be very beneficial for you and your work.  Micro-breaks, lunchtime breaks and longer breaks, have all been shown to have a positive relationship with wellbeing and productivity. By taking regular breaks you can boost your performance.`,
+},
+{
+  id: 6, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `Want to slow the aging process? Meditation is proven to help!`,
+},
+{
+  id: 7, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `"Tension is who you think you should be. Relaxation is who you are." -- Chinese Proverb`,
+},
+{
+  id: 8, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `"The time to relax is when you don't have time for it." -- Sydney Harris`,
+},
+{
+  id: 9, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `"Your calm mind is the ultimate weapon against your challenges. So relax." -- Bryant McGill`,
+},
+{
+  id: 10, // uniquely identify this tip
+  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+  detail: `"Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor." -- Thich Nhat Hanh`,
+},
+
+];
