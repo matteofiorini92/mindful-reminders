@@ -21,6 +21,59 @@ body {
     height: 100vh;
 }
 
+li {
+    font-size: 1.35rem;
+    text-align: justify;
+    padding: 0 1rem;
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+/*Header*/
+
+header {
+    border: 2px solid rgb(233, 199, 10);
+    border-radius: 40px;
+    margin: 1rem;
+}
+
+#title h1 {
+    border-radius: 40px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #446040;
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+/*Menu*/
+
+#menu {
+    letter-spacing: 5px;
+    padding: 0.55rem;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#menu li {
+    font-family: 'Amatic SC';
+    font-size: 25px;
+    list-style-type: none;
+    margin: 10px 10px;
+    display: inline;
+    letter-spacing: 5px;
+}
+
+#menu li:hover {}
+
+#menu a {
+    color: #446040;
+}
+
 /*Modal*/
 
 .button-2 {
@@ -43,7 +96,6 @@ body {
 }
 
 .fas {
-    /* color: rgb(126, 157, 122); */
     color: #446040;
 }
 
@@ -138,57 +190,12 @@ h1 {
     font-family: 'Righteous';
 }
 
-/*Header*/
-
-header {
-    border: 2px solid rgb(233, 199, 10);
-    border-radius: 40px;
-    margin: 1rem;
-}
-
-#title h1 {
-    border-radius: 40px;
-    margin-top: 1rem;
-    padding: 1rem;
-    font-size: 3rem;
-    /* color: rgb(126, 157, 122); */
-    color: #446040;
-    font-family: 'Righteous';
-    text-align: center;
-}
-
-/*Menu*/
-
-#menu {
-    letter-spacing: 5px;
-    padding: 0.55rem;
-    border-radius: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-
-#menu li {
-    font-family: 'Amatic SC';
-    font-size: 25px;
-    list-style-type: none;
-    margin: 10px 10px;
-    display: inline;
-    letter-spacing: 5px;
-}
-
-#menu a {
-    /* color: rgb(126, 157, 122); */
-    color: #446040;
-}
-
 
 /*Tips*/
 
 #tips-main {
     background-color: rgb(66, 93, 62, 0.9);
     color: #fff;
-    /*: #ffebcd;*/
     text-align: center;
     border-radius: 35px;
     padding: 2rem;
@@ -213,7 +220,6 @@ header {
     padding: 1rem;
     text-align: justify;
     color: #fff;
-    /*: #ffebcd;*/
 }
 
 
@@ -249,8 +255,7 @@ header {
 }
 
 .social-networks i:hover {
-    color: rgb(51, 102, 0, 0.8);
-    border-color: rgb(51, 102, 0, 0.8);
+    box-shadow: 3px 3px 5px rgb(66, 93, 62, 0.4);
 }
 
 /*Media queries*/
@@ -273,10 +278,26 @@ header {
         padding-top: 0;
     }
 
+    li {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 620px) {
+        iframe {
+            width: 420px;
+            height: 270px;
+        }
+    }
+
     @media screen and (max-width: 576px) {
 
         #menu li {
             font-size: 18px;
+        }
+
+        iframe {
+            width: 350px;
+            height: 230px;
         }
     }
 
@@ -284,5 +305,14 @@ header {
 
         .social-networks li {
             padding: 3px;
+        }
+
+
+    }
+
+    @media screen and (max-width: 420px) {
+        iframe {
+            width: 320px;
+            height: 200px;
         }
     }
