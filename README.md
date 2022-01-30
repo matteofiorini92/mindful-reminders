@@ -51,6 +51,17 @@ Mindful Reminders is a platform that provides its user with the opportunity to i
   - Bring more structure into my personal and professional life.
 
 ### Wireframes
+![wireframe-1](assets/images/wireframe-1.png)
+
+
+![wireframe-2](assets/images/wireframe-2.png)
+
+
+![wireframe-3](assets/images/wireframe-3.png)
+
+
+![wireframe-4](assets/images/wireframe-4.png) 
+
 
 ## Design  
 

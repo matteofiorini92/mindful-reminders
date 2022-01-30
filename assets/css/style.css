@@ -185,6 +185,7 @@ label {
     padding-bottom: 15px;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 
@@ -283,6 +284,7 @@ h1 {
     li {
         font-size: 1.1rem;
     }
+  }
 
     @media screen and (max-width: 620px) {
         iframe {
@@ -333,3 +335,6 @@ h1 {
             height: 170px;
         }
     }
+
+
+
