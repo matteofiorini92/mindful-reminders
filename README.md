@@ -14,6 +14,9 @@
     - [Colour Scheme](#colour-scheme)
   - [Features](#features)
     - [Homepage](#homepage)
+    - [Schedule](#schedule)
+    - [Mindful Tips](#mindful-tips)
+    - [](#)
     - [Future Features](#future-features)
   - [Testing](#testing)
     - [Validator Testing](#validator-testing)
@@ -61,9 +64,29 @@ Research conducted by Chromatherapists suggests that using shades of blue, green
 
 ### Homepage  
 
-The homepage contains a background image of a yellow toned nature scene that aims to evoke a sense of calm. The charity Mind states that bringing nature into your everyday life can benefit both your mental and physical wellbeing. During a workday, people may not have the opportunity to be present in nature. However, researchers led by Vrije University Medical Centre in the Netherlands conducted a study that shows that even just looking at images of nature could be enough to lower work stress levels. 
+The homepage contains a background image of a yellow toned nature scene that aims to evoke a sense of calm. The charity Mind states that bringing nature into your everyday life can benefit both your mental and physical wellbeing. During a workday, people may not have the opportunity to be present in nature. However, researchers led by Vrije University Medical Centre in the Netherlands conducted a study that shows that even just looking at images of nature could be enough to lower work stress levels.  
 
-The Homepage contains the title, Mindful Reminders, a navigation bar and a modal pop-up form that appears on opening the webpage prompting the user to set their work schedule which will generate their reminders for the day.
+The Homepage contains the title, Mindful Reminders, a navigation bar and a modal pop-up form that appears on opening the webpage prompting the user to set their work schedule which will generate their reminders for the day.  
+
+### Schedule  
+
+Upon opening the Homepage, the user is greeted with a form that allows them to enter their work schedule. This includes:  
+
+- The time they start work.
+- Their lunch-break.
+- The time they finish work.  
+
+The user will be alerted with a notification at these times. This encourages the user, for example, to take their lunch break which, 
+
+ These details are saved to local storage which saves the user from needing to enter each day; however, they have the option to amend this information by clicking the 'My Schedule' button in the navigation bar.
+
+### Mindful Tips  
+
+A 2017 study published in the Journal of Occupational Health Psychology concluded that people who engage in recovering activities during their breaks experience higher levels of well-being at the end of a working day. They concluded that mindful relaxation produced the best results in providing stress relief.  
+
+Mindful Reminders provides the user with a range of techniques to help them to integrate a mindful routine at work, where they spend a lot of their time, to help boost their well-being.
+
+### 
 
 ### Future Features  
 
@@ -71,7 +94,9 @@ Time constraints prevented us from building a site containing the full scope of 
 
 - A GPS feature that takes the user's location and provides them with a list of local support options and resources. This would further boost Mindful Reminder's advocacy for the wellbeing of the user if mindful exercises are not enough to maintain the balance in their life that they require.
   
-- A wider range of mindful tips to provide more variety to the user. Whilst practicing activities such as breathing techniques and exercise is cited by many as effective in bolstering wellbeing and mental health, particularly if practiced regularly which this app aims to encourage; we understand that many other techniques may also be helpful. Mindful Reminders would like to provide that variation and support to its users.
+- A wider range of mindful tips to provide more variety to the user. Whilst practicing activities such as breathing techniques and exercise is cited by many as effective in bolstering wellbeing and mental health, particularly if practiced regularly which this app aims to encourage; we understand that many other techniques may also be helpful. Mindful Reminders would like to provide that variation and support to its users.  
+  
+- An option to share a particular tip, perhaps that the user found useful, with other colleagues or friends.
 
 ## Testing
 
@@ -140,6 +165,7 @@ Content to create the Mindful Tips and other research used in building the site 
 - [Tiny Pulse](https://www.tinypulse.com/blog/sk-desk-exercises)
 - [Fitbit](https://blog.fitbit.com/desk-exercises/)
 - [Inc.](https://www.inc.com/kenny-kline/9-exercises-you-can-do-in-your-office.html)
+- [Inc.](https://www.inc.com/amy-morin/should-you-spend-your-lunch-break-walking-in-park-or-practicing-mindful-relaxation-science-says-theres-a-clear-winner.html)
 - [Advanced Eyecare & Aesthetics](https://advancedeyecaremd.net/20-20-20-tipstopreventeyestrain/)
 - [Employee Benefits](https://employeebenefits.co.uk/mindfulness-matters-implement-employees/#:~:text=Studies%20also%20show%20that%20practicing,and%20more%20engaged%20at%20work.)
 - [The Wellbeing Thesis](https://thewellbeingthesis.org.uk/foundations-for-success/stress/emotional-hi-jacking/)
