@@ -117,8 +117,21 @@ const init = function () {
 
 document.addEventListener("DOMContentLoaded", init);
 
+/* 
+if all tips have been used, refresh and set all of them to false to be used again
+*/
+const refreshTips = () =>{
+  tipsData.forEach((el) => el.used = false);
+}
+
+
 const getTipToDisplay = function () {
-  const unusedTips = tipsData.filter((data) => !data.used);
+  let unusedTips = tipsData.filter((data) => !data.used);
+  console.log("tips data==="+ unusedTips.length )
+  if(unusedTips.length === 0){
+    refreshTips();
+    unusedTips = tipsData.filter((data) => !data.used);
+  }
   const tipId = Math.floor(Math.random() * unusedTips.length);
   return unusedTips[tipId].id;
 };
@@ -130,7 +143,9 @@ const displayTip = function () {
   if (divExists) {
     tipsEl.firstChild.remove();
   }
-  explainDiv.innerHTML = tipsData[getTipToDisplay()].detail;
+  const tipIndex = getTipToDisplay();
+  explainDiv.innerHTML = tipsData[tipIndex].detail;
+  tipsData[tipIndex].used = true;
   explainDiv.textAlign = "center";
   tipsEl.insertAdjacentElement("afterbegin", explainDiv);
 };
