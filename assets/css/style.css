@@ -39,10 +39,12 @@ body {
 
 .button-1 {
     cursor: pointer;
+    color: #446040;
 }
 
 .fas {
-    color: rgb(126, 157, 122);
+    /* color: rgb(126, 157, 122); */
+    color: #446040;
 }
 
 .modal-container {
@@ -86,12 +88,13 @@ body {
     opacity: 0.7;
 }
 
-#modal_reminder{
+#modal_reminder {
     font-weight: bold;
     font-size: 150%;
     color: rgb(126, 157, 122);
     font-family: 'Open Sans';
 }
+
 section {
     display: flex;
     align-items: center;
@@ -118,6 +121,8 @@ section {
     background-color: #ffe5d9;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
 
 }
 
@@ -146,7 +151,8 @@ header {
     margin-top: 1rem;
     padding: 1rem;
     font-size: 3rem;
-    color: rgb(126, 157, 122);
+    /* color: rgb(126, 157, 122); */
+    color: #446040;
     font-family: 'Righteous';
     text-align: center;
 }
@@ -164,15 +170,16 @@ header {
 
 #menu li {
     font-family: 'Amatic SC';
-    font-size: 20px;
+    font-size: 25px;
     list-style-type: none;
     margin: 10px 10px;
     display: inline;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 #menu a {
-    color: rgb(126, 157, 122);
+    /* color: rgb(126, 157, 122); */
+    color: #446040;
 }
 
 
@@ -234,8 +241,10 @@ header {
     display: inline-block;
     font-size: 20px;
     padding: 8px;
-    color: rgb(126, 157, 122);
-    border: 2px solid rgb(126, 157, 122);
+    /* color: rgb(126, 157, 122);
+    border: 2px solid rgb(126, 157, 122); */
+    color: #446040;
+    border: 2px solid #446040;
     border-radius: 50%;
 }
 
