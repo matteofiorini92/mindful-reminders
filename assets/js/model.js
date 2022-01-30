@@ -1,7 +1,7 @@
 export const tipsData = [{
     id: 0, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-    detail: `<h2>Relieving Neck Tension</h2>.
+    detail: `<h2>Relieving Neck Tension</h2>
       <p>Before you get started with any exercise, make sure you get rid of some of the tension that’s accumulated from hours of sitting at your desk.
       These yoga moves for your neck and shoulders will allow you to avoid any headaches or neck pain later in the evening by taking the strain off your muscles.
       Despite how simple these moves seem, they are very effective and involve no pain.</p> 
@@ -13,7 +13,7 @@ export const tipsData = [{
     detail: `<h2>Wrist Stretches</h2>
         <p>Particularly useful for people who use the computer a lot, these wrist stretches help you relieve and avoid wrist pain and other more serious conditions in the future.
         </p> <p>For some quick ideas: Lift your palms, stretch your arms, press your palms into each other, shake your hands to get rid of any tension, or try some wrist curls using water bottles as weights.
-        .</p>`,
+        </p>`,
   },
   {
     id: 2, // uniquely identify this tip
@@ -36,7 +36,7 @@ export const tipsData = [{
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Chair Dips</h2>
         <p>For this exercise, you need an office chair that won’t roll away from you. Scoot up to the very front edge of your chair, place your legs out in front of you, and place your hands on either side of your hips, fingers pointing towards your desk. Grasp the edges of the chair with both hands, and use your core and arms to raise your body up off the chair and then down so that your rear goes down toward the floor. Push yourself back up,</p>
-        <p>and repeat this 15 times. Do three cycles of 15.</p>`,
+        <p>Repeat this 15 times. Do three cycles of 15.</p>`,
   },
   {
     id: 5, // uniquely identify this tip
@@ -114,7 +114,7 @@ export const tipsData = [{
   {
     id: 13, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-    detail: `<h2>The "magic carpet ride"</h2>
+    detail: `<h2>The "Magic Carpet Ride"</h2>
         <p>You don't even need to leave your chair for this move. While sitting on your chair, cross your legs so your feet rest under your ankles. Next, put your hands on the chair's armrests,engage your core, and lift the rest of your body a few inches off the chair.
           </p>
         <p>Hold the pose for 10 to 20 seconds, rest, and then repeat for a total of five times.
@@ -123,7 +123,7 @@ export const tipsData = [{
   {
     id: 14, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-    detail: `<h2>Stair climbing</h2>
+    detail: `<h2>Stair Climbing</h2>
         <p>Assuming you have access to a staircase at your job, here's a simple way to squeeze some cardio into your workday: Set a timer for as many minutes as you have (whether it's two, five, or 10, it'll still be good for you) and take to the stairs.
           </p>
         <p>If you're willing to get sweaty, run up and down as fast as you're able. If you're trying to avoid creasing your work outfit, you can still get your heart rate up by walking briskly up and down the stairs. Bonus points if you take them two at a time.
@@ -136,10 +136,7 @@ export const tipsData = [{
         <p>Sit tall in your chair with your pelvis slightly tilted forward. Pull your belly button up and in. Remember to brace your core (imagine getting ready for someone to hit your belly).
           </p>
         <p> Hold for 10 to 15 seconds, then relax for a breath or two. Repeat five times.
-          </p></article>,
-                <article><h2>4-7-8 Breathing</h2><p> Take a deep inhale, counting to four. Hold your breath for seven seconds.Slowly exhale for a count of eight.
-          </p>
-          <p>Repeat these steps for four minutes or until you feel a sense of relaxation.</p></article>`
+          </p></article>`
   },
   {
     id: 16, // uniquely identify this tip
@@ -163,113 +160,110 @@ export const tipsData = [{
     id: 18, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Box Breathing</h2>
-        <ol>
-        <li>Close your eyes and breathe in through your nose slowly, counting to four.</li>
-        <li>Hold your breath, again counting slowly to four.</li>
-        <li>Release your breath by slowly exhaling for four seconds.</li>
-        <li>Repeat these steps for three minutes, or as long as is comfortable to you.</li>
-        </ol>`,
+        <ul class="breathing-list">
+        <li>Close your eyes and breathe in through your nose slowly, counting to four.</li><br>
+        <li>Hold your breath, again counting slowly to four.</li><br>
+        <li>Release your breath by slowly exhaling for four seconds.</li><br>
+        <li>Repeat these steps for three minutes, or as long as is comfortable to you.</li><br>
+        </ul>`,
   },
   {
     id: 19, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>4-7-8 Breathing</h2>
-        <ol>
-        <li>Take a deep inhale, counting to four.</li>
-        <li>Hold your breath for seven seconds.</li>
-        <li>Slowly exhale for a count of eight.</li>
-        <li>Repeat these steps for four minutes or until you feel a sense of relaxation.</li>
-        </ol>`,
+        <ul class="breathing-list">
+        <li>Take a deep inhale, counting to four.</li><br>
+        <li>Hold your breath for seven seconds.</li><br>
+        <li>Slowly exhale for a count of eight.</li><br>
+        <li>Repeat these steps for four minutes or until you feel a sense of relaxation.</li><br>
+        </ul>`,
   },
   {
     id: 20, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>7/11 Breathing</h2>
-    <p>For this technique, try and take a diaphragmatic breath, breathing up into your diaphragm and pushing your stomach out as you inhale.</p><br>
-        <ol>
-        <li>Take a deep breath in, counting to seven.</li>
-        <li>Slowly breathe out for a count of eleven seconds.</li>
-        <li>Repeat these steps for four minutes, or until you feel a sense of calm.</li>
-        <li>The 7/11 technique is a powerful tool to stimulate the Parasympathetic Nervous System to help reduce feelings of anxiety.</li>
-        </ol>`,
+    <p>For this technique, try and take a diaphragmatic breath, breathing up into your diaphragm and pushing your stomach out as you inhale.</p>
+        <ul class="breathing-list">
+        <li>Take a deep breath in, counting to seven.</li><br>
+        <li>Slowly breathe out for a count of eleven seconds.</li><br>
+        <li>Repeat these steps for four minutes, or until you feel a sense of calm.</li><br>
+        <li>The 7/11 technique is a powerful tool to stimulate the Parasympathetic Nervous System to help reduce feelings of anxiety.</li><br>
+        </ul>`,
   },
   {
     id: 21, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Lion’s Breath</h2>
-    <p>This exercise uses breathing along with face stretches to relieve stress and tension. Exhaling deeply can relax the muscles.</p><br>
+    <p>This exercise uses breathing along with face stretches to relieve stress and tension. Exhaling deeply can relax the muscles.</p>
 
-    <p>To perform lion breathing, a person should:</p><br>
-        <ol>
-        <li>Breathe in deeply through the nose.</li>
-        <li>Breathe out forcefully with the mouth open wide, sticking the tongue out.</li>
-        <li>Roll the eyes upward while breathing out to stretch the face.</li>
-        <li>Repeat these steps for three minutes, or until you feel a sense of calm.</li>
-        </ol>`,
+    <p>To perform lion breathing, a person should:</p>
+        <ul class="breathing-list">
+        <li>Breathe in deeply through the nose.</li><br>
+        <li>Breathe out forcefully with the mouth open wide, sticking the tongue out.</li><br>
+        <li>Roll the eyes upward while breathing out to stretch the face.</li><br>
+        <li>Repeat these steps for three minutes, or until you feel a sense of calm.</li><br>
+        </ul>`,
   },
   {
     id: 22, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Roll Breathing</h2>
-    <p>Roll breathing allows you to use every part of your lungs and focus on the rhythm of your breathing.</p><br>
+    <p>Roll breathing allows you to use every part of your lungs and focus on the rhythm of your breathing.</p>
 
     <p>Did you know that we only use 70% of our lung capacity?</p><br>
-
-    
-        <ol>
-        <li>Place your hands on your chest and stomach so that you can notice how your body moves with your breath.</li>
-        <li>As you inhale try to have your stomach expand, so that your hand goes up with the breath. Your chest should remain still during this first step. Breathe in through the nose, out through your mouth. Repeat this process 10 times.</li>
-        <li>Now that you have practiced breathing into your lower lungs, inhale into them once more. Halfway through; however, stop and continue breathing into your upper lungs so that your chest rises instead of your stomach.</li>
-        <li>Exhale through your mouth slowly as you make a small whooshing sound. Your stomach should empty first before your chest does. </li>
-        <li>Practice this exercise for three to five minutes at a time.</li>
-        </ol>`,
+  
+        <ul class="breathing-list">
+        <li>Place your hands on your chest and stomach so that you can notice how your body moves with your breath.</li><br>
+        <li>As you inhale try to have your stomach expand, so that your hand goes up with the breath. Your chest should remain still during this first step. Breathe in through the nose, out through your mouth. Repeat this process 10 times.</li><br>
+        <li>Now that you have practiced breathing into your lower lungs, inhale into them once more. Halfway through; however, stop and continue breathing into your upper lungs so that your chest rises instead of your stomach.</li><br>
+        <li>Exhale through your mouth slowly as you make a small whooshing sound. Your stomach should empty first before your chest does.</li><br>
+        <li>Practice this exercise for three to five minutes at a time.</li><br>
+        </ul>`,
   },
   {
     id: 23, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Belly Breathing</h2>
-    <p>According to The American Institute of Stress, 20 to 30 minutes of belly breathing each day will reduce stress and anxiety. However, even short bursts have their benefit.</p><br>
+    <p>According to The American Institute of Stress, 20 to 30 minutes of belly breathing each day will reduce stress and anxiety. However, even short bursts have their benefit.</p>
 
     
-        <ol>
-        <li>Place one hand on your upper chest and the other hand on your belly, below the ribcage.</li>
-        <li>Allow your belly to relax, without forcing it inward by squeezing or clenching your muscles.</li>
-        <li>Breathe in slowly through your nose. The air should move into your nose and downward so that you feel your stomach rise with your other hand and fall inward (toward your spine).</li>
+        <ul>
+        <li>Place one hand on your upper chest and the other hand on your belly, below the ribcage.</li><br>
+        <li>Allow your belly to relax, without forcing it inward by squeezing or clenching your muscles.</li><br>
+        <li>Breathe in slowly through your nose. The air should move into your nose and downward so that you feel your stomach rise with your other hand and fall inward (toward your spine).</li><br>
         <li>Exhale slowly through slightly pursed lips. Take note of the hand on your chest, which should remain relatively still.</li>
-        <li>Practice this exercise for three to five minutes at a time.</li>
-        </ol>`,
+        <li>Practice this exercise for three to five minutes at a time.</li><br>
+        </ul>`,
   },
   {
     id: 24, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Resonance Breathing</h2>
-    <p>Resonance breathing, or coherent breathing, can help you get into a relaxed state and reduce anxiety.</p><br>
+    <p>Resonance breathing, or coherent breathing, can help you get into a relaxed state and reduce anxiety.</p>
 
-    
-        <ol>
-        <li>Lie down and close your eyes.</li>
-        <li>Gently breathe in through your nose, mouth closed, for a count of six seconds. Don't fill your lungs too full of air.</li>
-        <li>Exhale for six seconds, allowing your breath to leave your body slowly and gently without forcing it.</li>
-        <li>Continue for up to 10 minutes.</li>
-        <li>Take a few additional minutes to be still and focus on how your body feels.</li>
-        </ol>`,
+        <ul>
+        <li>Lie down and close your eyes.</li><br>
+        <li>Gently breathe in through your nose, mouth closed, for a count of six seconds. Don't fill your lungs too full of air.</li><br>
+        <li>Exhale for six seconds, allowing your breath to leave your body slowly and gently without forcing it.</li><br>
+        <li>Continue for up to 10 minutes.</li><br>
+        <li>Take a few additional minutes to be still and focus on how your body feels.</li><br>
+        </ul>`,
   },
   {
     id: 25, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Reset Your System</h2>
   
-        <ol>
-        <li>Sit comfortably in a chair and focus on the feel of your back against the back of the chair and your feet planted on the floor. </li>
-        <li>Then, starting at your ankles, slowly work your way up your body, tensing up each muscle and then allowing it to relax. Notice how as you move up your body, you become more relaxed overall.</li>
-        </ol>`,
+        <ul>
+        <li>Sit comfortably in a chair and focus on the feel of your back against the back of the chair and your feet planted on the floor. </li><br>
+        <li>Then, starting at your ankles, slowly work your way up your body, tensing up each muscle and then allowing it to relax. Notice how as you move up your body, you become more relaxed overall.</li><br>
+        </ul>`,
   },
   {
     id: 26, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Three Positive Things</h2>
-    <p>Write down and reflect on three positive things that have happened today.</p><br>
-    <p>(It may be helpful to try this each day over the course of a week.)</p><br>
+    <p>Write down and reflect on three positive things that have happened today (It may be helpful to try this each day over the course of a week.).</p>
     <p>These positive things could be small or large, such as “it wasn't so hectic today on my commute to work" or, “I made start on my project.”</p>`,
   },
   {
@@ -277,25 +271,25 @@ export const tipsData = [{
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Guided Meditation</h2>
     <p>The Mayo Clinic states that meditation can give you a sense of calm, peace and balance that can benefit both your emotional well-being and your overall health.</p><br>
-    <p>Take five minutes to listen to this guided meditation.</p><br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/inpok4MKVLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    <p>Take five minutes to listen to this guided meditation.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/inpok4MKVLM" title="YouTube video player" aria-label="Guided Meditation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
   },
   {
     id: 28, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Binaural Beats</h2>
-    <p>A 2019 review of 22 studies found a significant link between more prolonged exposure to binaural beat tapes and reduced anxiety.</p><br>
+    <p>A 2019 review of 22 studies found a significant link between more prolonged exposure to binaural beat tapes and reduced anxiety.</p>
     <p>Using headphones, take a few minutes, or as long as you have, to listen to the video below. The 528Hz frequency is thought to reduce stress and cortisol levels in the body.</p><br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OjLICbS-JMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OjLICbS-JMM" title="YouTube video player" aria-label="Binaural Beats Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
   },
   {
     id: 29, // uniquely identify this tip
     used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
     detail: `<h2>Guided Imagery</h2>
-    <p>Guided Imagery can help you to learn how to detach yourself from the moment and relax.</p><br>
-    <p>You can pratice this on your own or use the guided visualisation video below.</p><br>
-    <p>Close your eyes or focus on a point and visualise a scene that puts you at ease. Practice some breathwork whilst you visualise and focus as you inhale and exhale.</p><br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrxaWcw3i0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Guided Imagery can help you to learn how to detach yourself from the moment and relax.</p>
+    <p>You can pratice this on your own or use the guided visualisation video below.</p>
+    <p>Close your eyes or focus on a point and visualise a scene that puts you at ease. Practice some breathwork whilst you visualise and focus as you inhale and exhale.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrxaWcw3i0Y" title="YouTube video player" aria-label="Guided Imagery Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `,
   },
 
