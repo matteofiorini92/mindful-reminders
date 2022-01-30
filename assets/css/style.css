@@ -24,15 +24,17 @@ body {
 /*Modal*/
 
 .button-2 {
-    background-color: rgb(126, 157, 122, 0.6);
-    color: black;
+    background-color: rgb(66, 93, 62, 0.9);
     border: 0;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2);
-    color: black;
-    font-size: 14px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
     padding: 20px 35px;
     cursor: pointer;
+    font-family: 'Righteous';
+    margin-top: 15px;
 }
 
 .button-1 {
@@ -70,13 +72,13 @@ body {
     max-width: 100%;
     text-align: center;
     margin-top: 8rem;
-    
+
 
 }
 
 .modal h1 {
     margin: 0;
-
+    color: #464646;
 }
 
 .modal p {
@@ -122,7 +124,8 @@ section {
 label {
     display: block;
     padding-bottom: 15px;
-
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
 }
 
 
@@ -176,15 +179,16 @@ header {
 /*Tips*/
 
 #tips-main {
-    background-color: rgb(126, 157, 122, 0.8);
-    color: rgb(0,0,0);         /*: #ffebcd;*/
+    background-color: rgb(66, 93, 62, 0.9);
+    color: #fff;
+    /*: #ffebcd;*/
     text-align: center;
     border-radius: 35px;
     padding: 2rem;
     /* margin: 5rem auto; */
     /* margin-top: 2rem; */
     font-family: 'Open Sans';
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     /* overflow: scroll; */
     width: 50rem;
     max-width: 80vw;
@@ -200,8 +204,9 @@ header {
 
 #tips-main p {
     padding: 1rem;
-    text-align: center;
-    color: rgb(0,0,0);   /*: #ffebcd;*/
+    text-align: justify;
+    color: #fff;
+    /*: #ffebcd;*/
 }
 
 
