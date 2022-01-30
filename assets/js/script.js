@@ -94,6 +94,8 @@ const startReminderTimer = function () {
       displayReminder("dayend");
     } else if (time === daystart) {
       displayReminder("daystart");
+    } else if ((now - startTime) % 3600000 === 0) {
+      displayReminder("water");
     } else if ((now - startTime) % 1200000 === 0) {
       displayReminder("twenty");
     }
@@ -153,6 +155,8 @@ const displayReminder = function (period) {
       contentDiv.innerHTML = `${getGreeting()}It is time for lunch! Please have something to eat! and do some exercises`;
     } else if (period === "dayend") {
       contentDiv.innerHTML = `${getGreeting()} Lovely time of them all. Please proceed home!!!`;
+    } else if (period === "water") {
+      contentDiv.innerHTML = `It's time to drink some water: staying hydrated is important!`;
     } else if (period === "twenty") {
       contentDiv.innerHTML = `You've been staring at the screen for 20 minutes, look 20 feet away for 20 seconds!`;
     }
