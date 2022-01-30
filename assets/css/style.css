@@ -286,9 +286,9 @@ h1 {
 
     @media screen and (max-width: 620px) {
         iframe {
-            transform: scale(0.8);
-            /* width: 420px;
-            height: 270px; */
+            /* transform: scale(0.8); */
+            width: 420px;
+            height: 270px;
         }
     }
 
@@ -299,8 +299,8 @@ h1 {
         }
 
         iframe {
-            width: 350px;
-            height: 230px;
+            width: 380px;
+            height: 250px;
         }
     }
 
@@ -320,7 +320,7 @@ h1 {
         }
     }
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 430px) {
         iframe {
             width: 320px;
             height: 200px;
