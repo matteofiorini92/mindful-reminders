@@ -44,6 +44,7 @@ planForm.addEventListener('submit', (e) => {
   modal_container.classList.remove('show');
   startReminderTimer();
   getTime();
+  saveUser();
 });
 
 const startTimer = function () {
@@ -90,6 +91,7 @@ const startReminderTimer = function () {
 };
 
 const init = function () {
+  getUser();
   modal_container.classList.add('show');
   displayTip();
   startTimer();
@@ -128,11 +130,13 @@ const displayReminder = function (period) {
       reminderContEl.firstChild.remove();
     }
     if (period === "daystart") {
-      contentDiv.innerHTML = "Welcome to work! Please remember to do your exercises";
+      // const greet = `{getGreeting()} Welcome to work! Please remember to do your exercises`;
+      // console.log(greet)
+      contentDiv.innerHTML = `${getGreeting()} Welcome to work! Please remember to do your exercises`;
     } else if (period === "lunch") {
-      contentDiv.innerHTML = "It is time for lunch! Please have something to eat! and do some exercises";
+      contentDiv.innerHTML = `${getGreeting()}It is time for lunch! Please have something to eat! and do some exercises`;
     } else if (period === "dayend") {
-      contentDiv.innerHTML = "Lovely time of them all. Please proceed home!!!";
+      contentDiv.innerHTML = `${getGreeting()} Lovely time of them all. Please proceed home!!!`;
     }
     contentDiv.textAlign = "center";
     reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
@@ -151,4 +155,40 @@ function getTime() {
   hour = hour.length == 1 ? '0' + hour : hour;
   min = min.length == 1 ? '0' + min : min;
   return hour + ":" + min;
+}
+
+function getGreeting(){
+  const today = new Date();
+  const hour = parseInt(today.getHours());
+  if(hour > 0 && hour < 12) {
+    return `Good morning ${name}, `;
+  }else if (hour >= 12 && hour < 16){
+    return `Good afternoon ${name}, `;
+  }else{
+    return `Good evening ${name}, `;
+  }
+}
+
+function saveUser(){
+  window.localStorage.clear();
+  window.localStorage.setItem('name',name );
+  window.localStorage.setItem('daystart', daystart);
+  window.localStorage.setItem('lunchbreak', lunchbreak);
+  window.localStorage.setItem('dayend', dayend);
+}
+
+// retrieve user reminder settings from Local Storage
+function getUser(){
+ name =  window.localStorage.getItem('name');
+ daystart = window.localStorage.getItem('daystart');
+ lunchbreak = window.localStorage.getItem('lunchbreak');
+ dayend = window.localStorage.getItem('dayend');
+// if there is existing data in name, then render data to DOM
+if(name){
+  planForm['Name'].value = name;
+  planForm['daystart'].value=daystart;
+  planForm['lunchbreak'].value =lunchbreak;
+  planForm['dayend'].value =dayend;
+}
+
 }
