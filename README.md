@@ -1,5 +1,5 @@
 # Mindful Reminders
-[Link to Deployed Site](https://matteofiorini92.github.io/hackathon-jan-2022/)
+[Link to Deployed Site](https://matteofiorini92.github.io/mindful-reminders/)
 
   
 <!-- TOC -->
