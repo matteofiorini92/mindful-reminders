@@ -55,12 +55,12 @@
     </header>
 
 
-    <div class="modal-container" id="modal_container">
-        <div class="modal">
-            <h1>Plan your Day!</h1>
-            <section>
+    <section>
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h2>Plan your Day!</h2>
                 <div class="container">
-                    <form action="" id="plan-form">
+                    <form action="#" id="plan-form">
                         <div class="form-group">
                             <label for="Name">Name</label>
                             <input type="text" class="time" id="Name" name="Name" required>
@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="lunchbrek">When is your lunch break</label>
+                            <label for="lunch-break">When is your lunch break</label>
                             <input type="time" class="time" id="lunch-break" name="lunchbreak" required>
                         </div>
 
@@ -91,22 +91,18 @@
                         </div>
                         <div class="form-group">
                             <label for="play-sound"><i class="fas fa-volume-up"></i>PLay sound for notifications</label>
+
                             <input type="checkbox" class="play-sound" id="play-sound" name="play-sound" checked>
+                            <input type="checkbox" class="play-sound" id="play-sound" name="playsound" checked>
+
                         </div>
 
                         <input type="submit" class="button-2" value="Set Reminders" id="submit-plan">
                     </form>
 
-
-
-
-
-
-
-
                 </div>
+            </div>
         </div>
-    </div>
     </section>
     <section id="main">
 
@@ -118,7 +114,7 @@
 
         <div class="modal-container" id="modal_reminder">
             <div class="modal">
-                <h1 id="reminder-header">Reminder!</h1>
+                <h2 id="reminder-header">Reminder!</h2>
                 <div class="container" id="reminder-content">
                     <button class="close button-2">Close</button>
                 </div>

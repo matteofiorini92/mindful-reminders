@@ -21,6 +21,7 @@ let lunchbreak;
 let morningbreak;
 let afternoonbreak;
 let dayend;
+let playSound = true;
 let toStopReminder = false;
 let lastReminder= "";
 let time = tipInterval;
@@ -48,6 +49,7 @@ planForm.addEventListener('submit', (e) => {
   morningbreak = data['morningbreak'].value;
   afternoonbreak = data['afternoonbreak'].value;
   dayend = data['dayend'].value;
+  playSound = data['playsound'].checked;
   modal_container.classList.remove('show');
   startReminderTimer();
   saveUser();
@@ -57,13 +59,18 @@ planForm.addEventListener('submit', (e) => {
 
 const startTimer = function () {
   const tick = function () {
-    const hour = String(Math.trunc(time / 3600)).padStart(2, 0);
-    const min = String(Math.trunc((time % 3600) / 60)).padStart(2, 0);
-    const sec = String(time % 60).padStart(2, 0);
+    let hour = Math.trunc(time / 3600);
+    let min = Math.trunc((time % 3600) / 60);
+    let sec = time % 60;
     // In each call, print the remaining time to UI, include hour if it is greater than 0
+    if (sec !== 0) {
+      min += 1;
+    }
     hour > 0 ?
-      (timerEl.textContent = `${hour}:${min}:${sec}`) :
-      (timerEl.textContent = `${min}:${sec}`);
+      (timerEl.textContent = `New wellness fact in ${hour}:${min.padStart(2, 0)}...`) :
+      min > 1 ?
+        (timerEl.textContent = `New wellness fact in ${min} minutes...`) :
+        (timerEl.textContent = `New wellness fact in ${min} minute...`) 
 
     // When 0 seconds, restart timer and display another wellness fact
     if (time === 0) {
@@ -129,7 +136,7 @@ const init = function () {
   }
   displayWellnessFact();
   startTimer();
-}
+};
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -137,11 +144,11 @@ document.addEventListener("DOMContentLoaded", init);
 
 const refreshTips = () =>{
   tipsData.forEach((el) => el.used = false);
-}
+};
 
 const refreshWellenssFact = () =>{
   wellnessFactsData.forEach((el) => el.used = false);
-}
+};
 
 /* functions to get a random tip or wellness fact */
 
@@ -212,7 +219,8 @@ const displayReminder = function (period) {
     }
     contentDiv.textAlign = "center";
     reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
-    reminderAudioEl.play();
+
+    if(playSound) reminderAudioEl.play();
     lastReminder = period;
     reminderModalEl.classList.add('show');
 
@@ -236,7 +244,7 @@ function getTime() {
   if (sec === '0') {
     result = hour + ":" + min; 
   } else {
-    hour + ":" + min + ":" + sec;
+    result = hour + ":" + min + ":" + sec;
   }
   return result;
 }
@@ -265,6 +273,7 @@ function saveUser(){
   window.localStorage.setItem('morningbreak', morningbreak);
   window.localStorage.setItem('afternoonbreak', afternoonbreak);
   window.localStorage.setItem('dayend', dayend);
+  window.localStorage.setItem('playsound', playSound);
 }
 
 // retrieve user reminder settings from Local Storage
@@ -275,6 +284,7 @@ function getUser(){
  morningbreak = window.localStorage.getItem('morningbreak');
  afternoonbreak = window.localStorage.getItem('afternoonbreak');
  dayend = window.localStorage.getItem('dayend');
+ playSound = window.localStorage.getItem('playsound');
 // if there is existing data in name, then render data to DOM
 if(name){
   planForm['Name'].value = name;
@@ -283,6 +293,7 @@ if(name){
   planForm['morningbreak'].value = morningbreak;
   planForm['afternoonbreak'].value = afternoonbreak;
   planForm['dayend'].value = dayend;
+  planForm['playsound'].value = playSound;
 }
 
 }

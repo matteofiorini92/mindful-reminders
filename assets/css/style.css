@@ -56,13 +56,12 @@ header {
     font-family: 'Amatic SC';
     font-size: 25px;
     list-style-type: none;
-    margin: 10px 10px;
     display: inline;
     letter-spacing: 5px;
     font-weight: bold;
 }
 
-#menu li:hover {}
+/*#menu li:hover {}*/
 
 #menu a {
     color: #446040;
@@ -74,7 +73,7 @@ header {
     background-color: rgb(66, 93, 62, 0.9);
     border: 0;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     color: #fff;
     font-size: 20px;
     letter-spacing: 1.5px;
@@ -234,6 +233,11 @@ h2 {
     color: #fff;
 }
 
+#times {
+    font-size: medium;
+    float: right;
+    margin-top: 3%;
+}
 
 /* Footer */
 
@@ -300,6 +304,17 @@ h2 {
 }
 
 
+
+ /* @media screen and (max-width: 620px) {
+  iframe {
+       transform: scale(0.8); 
+    width: 420px;
+    height: 270px;
+}
+            */
+
+
+
 @media screen and (max-width: 576px) {
 
     #menu li {
@@ -326,4 +341,24 @@ h2 {
     .modal {
         transform: scale(0.8);
     }
+
+
+
 }
+
+/* @media screen and (max-width: 430px) {
+    iframe {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    iframe {
+        width: 270px;
+        height: 170px;
+    }
+
+}
+*/
+

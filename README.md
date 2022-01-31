@@ -1,8 +1,11 @@
 # Mindful Reminders
 [Link to Deployed Site](https://matteofiorini92.github.io/hackathon-jan-2022/)
 
-## Table of Contents  
+  
 <!-- TOC -->
+<details>
+<summary>Table of Contents  </summary>
+<br>
 
 - [Mindful Reminders](#mindful-reminders)
   - [Table of Contents](#table-of-contents)
@@ -31,6 +34,10 @@
     - [Technologies Used](#technologies-used)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
+
+</details>
+
+
 
 <!-- /TOC -->
 
@@ -127,9 +134,17 @@ Time constraints prevented us from building a site containing the full scope of 
 
 ### Validator Testing  
 
-- HTML
-- CSS
-- JavaScript
+- [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmatteofiorini92.github.io%2Fmindful-reminders%2F)
+- [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatteofiorini92.github.io%2Fmindful-reminders%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [JavaScript](https://jshint.com/)
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
 
 ### Accessibility  
 
