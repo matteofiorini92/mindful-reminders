@@ -195,11 +195,18 @@ const displayReminder = function (period) {
     toStopReminder = false;
     lastReminder = period;
   }
+
   if (!toStopReminder) {
     reminderContEl.style.display = "block";
     const contentDiv = document.createElement("div");
     const divExists = reminderContEl.firstChild;
     if (divExists) {
+      // check for 20 minutes reminder and water if another reminder is displayed return
+      if (period === "water" ||  period === "twenty") {
+        if(reminderModalEl.classList.contains('show')){
+          return
+        }
+      }
       reminderContEl.firstChild.remove();
     }
     if (period === "daystart") {
