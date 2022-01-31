@@ -232,6 +232,11 @@ h2 {
     color: #fff;
 }
 
+#times {
+    font-size: medium;
+    float: right;
+    margin-top: 3%;
+}
 
 /* Footer */
 

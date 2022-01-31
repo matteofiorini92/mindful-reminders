@@ -57,13 +57,19 @@ planForm.addEventListener('submit', (e) => {
 
 const startTimer = function () {
   const tick = function () {
-    const hour = String(Math.trunc(time / 3600)).padStart(2, 0);
-    const min = String(Math.trunc((time % 3600) / 60)).padStart(2, 0);
-    const sec = String(time % 60).padStart(2, 0);
+    let hour = Math.trunc(time / 3600); //.padStart(2, 0);
+    let min = Math.trunc((time % 3600) / 60); //.padStart(2, 0);
+    let sec = time % 60;
     // In each call, print the remaining time to UI, include hour if it is greater than 0
+    console.log(sec)
+    if (sec !== 0) {
+      min += 1;
+    }
     hour > 0 ?
-      (timerEl.textContent = `${hour}:${min}:${sec}`) :
-      (timerEl.textContent = `${min}:${sec}`);
+      (timerEl.textContent = `New wellness fact in ${hour}:${min.padStart(2, 0)}...`) :
+      min > 1 ?
+        (timerEl.textContent = `New wellness fact in ${min} minutes...`) :
+        (timerEl.textContent = `New wellness fact in ${min} minute...`) 
 
     // When 0 seconds, restart timer and display another wellness fact
     if (time === 0) {
