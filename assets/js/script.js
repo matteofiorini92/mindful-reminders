@@ -21,6 +21,7 @@ let lunchbreak;
 let morningbreak;
 let afternoonbreak;
 let dayend;
+let playSound = true;
 let toStopReminder = false;
 let lastReminder= "";
 let time = tipInterval;
@@ -48,6 +49,7 @@ planForm.addEventListener('submit', (e) => {
   morningbreak = data['morningbreak'].value;
   afternoonbreak = data['afternoonbreak'].value;
   dayend = data['dayend'].value;
+  playSound = data['playsound'].checked;
   modal_container.classList.remove('show');
   startReminderTimer();
   saveUser();
@@ -212,7 +214,8 @@ const displayReminder = function (period) {
     }
     contentDiv.textAlign = "center";
     reminderContEl.insertAdjacentElement("afterbegin", contentDiv);
-    reminderAudioEl.play();
+
+    if(playSound) reminderAudioEl.play();
     lastReminder = period;
     reminderModalEl.classList.add('show');
 
@@ -265,6 +268,7 @@ function saveUser(){
   window.localStorage.setItem('morningbreak', morningbreak);
   window.localStorage.setItem('afternoonbreak', afternoonbreak);
   window.localStorage.setItem('dayend', dayend);
+  window.localStorage.setItem('playsound', playSound);
 }
 
 // retrieve user reminder settings from Local Storage
@@ -275,6 +279,7 @@ function getUser(){
  morningbreak = window.localStorage.getItem('morningbreak');
  afternoonbreak = window.localStorage.getItem('afternoonbreak');
  dayend = window.localStorage.getItem('dayend');
+ playSound = window.localStorage.getItem('playsound');
 // if there is existing data in name, then render data to DOM
 if(name){
   planForm['Name'].value = name;
@@ -283,6 +288,7 @@ if(name){
   planForm['morningbreak'].value = morningbreak;
   planForm['afternoonbreak'].value = afternoonbreak;
   planForm['dayend'].value = dayend;
+  planForm['playsound'].value = playSound;
 }
 
 }
