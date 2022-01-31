@@ -299,12 +299,12 @@ h2 {
 }
 
 @media screen and (max-width: 620px) {
-    iframe {
-       /*transform: scale(0.8); */
+   /* iframe {
+       transform: scale(0.8); 
     width: 420px;
     height: 270px;
 }
-
+            */
 
 }
 
