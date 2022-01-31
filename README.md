@@ -1,8 +1,11 @@
 # Mindful Reminders
 [Link to Deployed Site](https://matteofiorini92.github.io/hackathon-jan-2022/)
 
-## Table of Contents  
+  
 <!-- TOC -->
+<details>
+<summary>Table of Contents  </summary>
+<br>
 
 - [Mindful Reminders](#mindful-reminders)
   - [Table of Contents](#table-of-contents)
@@ -31,6 +34,10 @@
     - [Technologies Used](#technologies-used)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
+
+</details>
+
+
 
 <!-- /TOC -->
 
