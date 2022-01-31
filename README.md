@@ -16,7 +16,7 @@
     - [Homepage](#homepage)
     - [Schedule](#schedule)
     - [Mindful Tips](#mindful-tips)
-    - [](#)
+    - [Reminders](#reminders)
     - [Future Features](#future-features)
   - [Testing](#testing)
     - [Validator Testing](#validator-testing)
@@ -84,8 +84,12 @@ The Homepage contains the title, Mindful Reminders, a navigation bar and a modal
 Upon opening the Homepage, the user is greeted with a form that allows them to enter their work schedule. This includes:  
 
 - The time they start work.
+- Their morning break
 - Their lunch-break.
+- Their afternoon break
 - The time they finish work.  
+
+![Plan your Day](https://media.giphy.com/media/nrtCbVxSF60PZLcksb/giphy.gif)
 
 The user will be alerted with a notification at these times. This encourages the user, for example, to take their lunch break which, 
 
@@ -97,7 +101,17 @@ A 2017 study published in the Journal of Occupational Health Psychology conclude
 
 Mindful Reminders provides the user with a range of techniques to help them to integrate a mindful routine at work, where they spend a lot of their time, to help boost their well-being.
 
-### 
+These tips include desk exercises, breathing techniques and other mindful exercises the user can do at work.
+
+![Tip-1](assets/images/tip-1.png)
+
+![Tip-2](assets/images/tip-2.png)
+
+### Reminders  
+
+We have incorporated the 20/20/20 rule to prevent eyestrain. The user is alerted with a reminder to take a break from their screen.
+
+![20/20/20](assets/images/20:20:20.png)
 
 ### Future Features  
 

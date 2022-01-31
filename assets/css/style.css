@@ -10,7 +10,6 @@
 body {
     background: url('../images/scenery.jpeg') no-repeat center / cover;
     background-attachment: fixed;
-    /* opacity: 0.9; */
     font-family: 'Amatic SC';
     align-items: center;
     justify-content: center;
@@ -157,7 +156,6 @@ li {
 #modal_reminder {
     font-weight: bold;
     font-size: 150%;
-    /* color: rgb(126, 157, 122); */
     font-family: 'Open Sans';
 }
 
@@ -240,8 +238,6 @@ h2 {
 /* Footer */
 
 .footer {
-    /* border-top: 2px solid rgb(233, 199, 10);
-    border-bottom: 2px solid rgb(233, 199, 10); */
     background-color: #fff;
 }
 
@@ -270,6 +266,14 @@ h2 {
 
 /*Media queries*/
 
+@media screen and (max-width: 1200px) {
+
+    .modal {
+        transform: scale(0.8);
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     #tips-main {
@@ -288,25 +292,13 @@ h2 {
         padding-top: 0;
     }
 
-    /* li {
-        font-size: 1.1rem;
-    } */
 
     .modal {
-        transform: scale(0.9);
+        transform: scale(0.8);
 
     }
 }
 
-@media screen and (max-width: 620px) {
-    /* iframe {
-        /* transform: scale(0.8); */
-    width: 420px;
-    height: 270px;
-}
-
-*/
-}
 
 @media screen and (max-width: 576px) {
 
@@ -314,10 +306,6 @@ h2 {
         font-size: 18px;
     }
 
-    /* iframe {
-        width: 380px;
-        height: 250px;
-    } */
 }
 
 @media screen and (max-width: 526px) {
@@ -338,19 +326,4 @@ h2 {
     .modal {
         transform: scale(0.8);
     }
-}
-
-/* @media screen and (max-width: 430px) {
-    iframe {
-        width: 320px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    iframe {
-        width: 270px;
-        height: 170px;
-    }
-
 }
