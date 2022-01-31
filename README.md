@@ -36,7 +36,7 @@
 
 ## Objective  
 
-Mindful Reminders is a platform that provides its user with the opportunity to integrate their wellness and mental health with their work routine. Studies show that practicing mindfulness can help employees manage mild depression, anxiety and other common mental health problems. Practicing mindfulness regularly helps train the brain, such that the brain can then drop into a mindful state easier. Mindful rReminders aims to 
+Mindful Reminders is a platform that provides its user with the opportunity to integrate their wellness and mental health with their work routine. Studies show that practicing mindfulness can help employees manage mild depression, anxiety and other common mental health problems and that regular practice helps train the brain, such that the brain can then drop into a mindful state easier. Mindful Reminders aims to assist the user in developing this regular practice.
 
 
 ## User Experience
@@ -69,7 +69,7 @@ Mindful Reminders is a platform that provides its user with the opportunity to i
 
 Research conducted by Chromatherapists suggests that using shades of blue, green and yellow can evoke calm, relieve stress and elicit happy emotions. We have taken this on board and have used shades of these colours across the site.  
 
-![Colour Pallete](assets/images/Mindful%20Reminders%20Colour%20Pallete.png)
+![Colour Pallete](assets/images/Mindful%20Reminders%20colour%20palette.png)
 
 ## Features  
 
@@ -118,6 +118,12 @@ Time constraints prevented us from building a site containing the full scope of 
 - JavaScript
 
 ### Accessibility  
+
+We adjusted the initial colour scheme to ensure it passed WCAG standards. Initially we had a lighter, softer green for the title rgb(126, 157, 122), but it had failed the contrast checker, so we changed it to a darker shade of green, #446040, which passed.  
+
+![Colour contrast](./assets/images/colour%20contrast.png)
+
+We also made sure to check all colours through the contrast checker to ensure maximum accessibility for users.
 
 ### Google Lighthouse Testing
 
