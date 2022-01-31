@@ -7,12 +7,10 @@ import {
 } from "./config.js";
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
-// const close = document.getElementById('close');
 const tipsEl = document.getElementById("tips-main");
 const timerEl = document.getElementById("times");
 
 const reminderContEl = document.querySelector("#reminder-content");
-const reminderHeadEl = document.querySelector("#reminder-header");
 const reminderAudioEl = document.querySelector("#reminder-audio");
 const reminderModalEl = document.querySelector("#modal_reminder");
 const closeReminder = document.querySelector('.close');
@@ -27,6 +25,9 @@ let toStopReminder = false;
 let lastReminder= "";
 let time = tipInterval;
 
+
+/* event listeners for the schedule modal form */
+
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
 });
@@ -36,8 +37,9 @@ closeReminder.addEventListener('click', () => {
   toStopReminder = true;
 });
 
+/* process the form content */
+
 planForm.addEventListener('submit', (e) => {
-  // process the form content
   e.preventDefault();
   const data = e.target;
   name = data['Name'].value;
@@ -48,25 +50,24 @@ planForm.addEventListener('submit', (e) => {
   dayend = data['dayend'].value;
   modal_container.classList.remove('show');
   startReminderTimer();
-  getTime(); // what is this for?
   saveUser();
 });
+
+/* Timer for wellness facts: display a different one every 10 minutes */
 
 const startTimer = function () {
   const tick = function () {
     const hour = String(Math.trunc(time / 3600)).padStart(2, 0);
     const min = String(Math.trunc((time % 3600) / 60)).padStart(2, 0);
-    // const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
     // In each call, print the remaining time to UI, include hour if it is greater than 0
     hour > 0 ?
       (timerEl.textContent = `${hour}:${min}:${sec}`) :
       (timerEl.textContent = `${min}:${sec}`);
 
-    // When 0 seconds, restart timer and display another tip
+    // When 0 seconds, restart timer and display another wellness fact
     if (time === 0) {
       time = tipInterval;
-      /* displayTip(); */
       displayWellnessFact();
     }
     // Decrease 1s
@@ -78,6 +79,7 @@ const startTimer = function () {
   return timer;
 };
 
+/* Timer for reminders: every second checks if it's daystart, dayend, lunch, morning break, afternoon break, water break or 20-20-20 */
 
 const startReminderTimer = function () {
   const tick = function () {
@@ -90,7 +92,7 @@ const startReminderTimer = function () {
     let todayAsStr = today.toString();
     day = day.length == 1 ? '0' + day : day;
     month = month.length == 1 ? '0' + month : month;
-    // get startTime as datetime object
+    // convert startTime to datetime object
     let startTime = Date.parse(year + '-' + month + '-' + day + 'T' + daystart + ':00.000' + todayAsStr[28] + todayAsStr[29] + todayAsStr[30] + ':00');
     now.setSeconds(0);
     now.setMilliseconds(0);
@@ -105,8 +107,10 @@ const startReminderTimer = function () {
     } else if (time === afternoonbreak) {
       displayReminder("afternoonbreak");
     } else if ((now - startTime) % 3600000 === 0) {
+      // every hour
       displayReminder("water");
     } else if ((now - startTime) % 1200000 === 0) {
+      // every 20 minutes
       displayReminder("twenty");
     }
   };
@@ -116,21 +120,21 @@ const startReminderTimer = function () {
   return timer;
 };
 
+/* When the document is loaded, get user and start displaying wellness facts */
+
 const init = function () {
   getUser();
   if (!name) {
     modal_container.classList.add('show');
   }
-  /* displayTip(); */
   displayWellnessFact();
   startTimer();
 }
 
 document.addEventListener("DOMContentLoaded", init);
 
-/* 
-if all tips have been used, refresh and set all of them to false to be used again
-*/
+/* if all tips have been used, refresh and set all of them to false to be used again */
+
 const refreshTips = () =>{
   tipsData.forEach((el) => el.used = false);
 }
@@ -139,10 +143,10 @@ const refreshWellenssFact = () =>{
   wellnessFactsData.forEach((el) => el.used = false);
 }
 
+/* functions to get a random tip or wellness fact */
 
 const getTipToDisplay = function () {
   let unusedTips = tipsData.filter((data) => !data.used);
-  console.log("tips data==="+ unusedTips.length )
   if(unusedTips.length === 0){
     refreshTips();
     unusedTips = tipsData.filter((data) => !data.used);
@@ -153,7 +157,6 @@ const getTipToDisplay = function () {
 
 const getWellnessFactToDisplay = function () {
   let unusedWellnessFacts = wellnessFactsData.filter((data) => !data.used);
-  console.log("wellness fact data==="+ unusedWellnessFacts.length )
   if(unusedWellnessFacts.length === 0){
     refreshWellenssFact();
     unusedWellnessFacts = wellnessFactsData.filter((data) => !data.used);
@@ -162,19 +165,7 @@ const getWellnessFactToDisplay = function () {
   return unusedWellnessFacts[wellnessFactId].id;
 };
 
-/* const displayTip = function () {
-  tipsEl.style.display = "block";
-  const explainDiv = document.createElement("div");
-  const divExists = tipsEl.firstChild;
-  if (divExists) {
-    tipsEl.firstChild.remove();
-  }
-  const tipIndex = getTipToDisplay();
-  explainDiv.innerHTML = tipsData[tipIndex].detail;
-  tipsData[tipIndex].used = true;
-  explainDiv.textAlign = "center";
-  tipsEl.insertAdjacentElement("afterbegin", explainDiv);
-}; */
+/* display the wellness fact randomly chosen by getWellnessFactToDisplay */
 
 const displayWellnessFact = function () {
   tipsEl.style.display = "block";
@@ -190,6 +181,8 @@ const displayWellnessFact = function () {
   tipsEl.insertAdjacentElement("afterbegin", explainDiv);
 };
 
+/* display the reminder if it's the relevant time of the day */
+
 const displayReminder = function (period) {
   if (period !== lastReminder){
     toStopReminder = false;
@@ -203,15 +196,12 @@ const displayReminder = function (period) {
       reminderContEl.firstChild.remove();
     }
     if (period === "daystart") {
-      // const greet = `{getGreeting()} Welcome to work! Please remember to do your exercises`;
-      // console.log(greet)
       contentDiv.innerHTML = `${getGreeting()} Welcome to work! Please remember to do your exercises`;
     } else if (period === "lunch") {
       contentDiv.innerHTML = `${getGreeting()}It is time for lunch! Please have something to eat! and do some exercises`;
     } else if (period === "dayend") {
       contentDiv.innerHTML = `${getGreeting()} Lovely time of them all. Please proceed home!!!`;
     } else if (period === "morningbreak" || period === "afternoonbreak") {
-      console.log(period)
       const tipIndex = getTipToDisplay();
       contentDiv.innerHTML = `${tipsData[tipIndex].detail}`;
       tipsData[tipIndex].used = true;
@@ -230,6 +220,11 @@ const displayReminder = function (period) {
 
 };
 
+/* get time of the day. used for reminders, to check if one of the times set by user (e.g. start day at 08:00) matches the current time.
+  returns hh:mm if seconds are 00 (e.g. if it's 08:00:00 returns 08:00)
+  if seconds are not 00, returns hh:mm:ss
+  so that only when seconds are 00, the time returned by this function matches the one set by the user */
+
 function getTime() {
   const today = new Date();
   let hour = today.getHours() + '';
@@ -238,7 +233,6 @@ function getTime() {
   let result = '';
   hour = hour.length == 1 ? '0' + hour : hour;
   min = min.length == 1 ? '0' + min : min;
-  console.log(sec)
   if (sec === '0') {
     result = hour + ":" + min; 
   } else {
@@ -246,6 +240,8 @@ function getTime() {
   }
   return result;
 }
+
+/* gets greeting based on the time of the day */
 
 function getGreeting(){
   const today = new Date();
@@ -258,6 +254,8 @@ function getGreeting(){
     return `Good evening ${name}, `;
   }
 }
+
+/* saves user settings to local storage */
 
 function saveUser(){
   window.localStorage.clear();
