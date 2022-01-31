@@ -46,7 +46,6 @@
                 <li>
                     <a href="index.html" class="active">Home<i class="fas fa-home"></i></a>
                 </li>
-                <!-- <li><a href='#'>Resources</a></a></li> -->
                 <li><span id="open" class="button-1">
                         My Schedule<i class="fas fa-cog"></i>
                     </span></li>
@@ -92,7 +91,10 @@
                         </div>
                         <div class="form-group">
                             <label for="play-sound"><i class="fas fa-volume-up"></i>PLay sound for notifications</label>
+
+                            <input type="checkbox" class="play-sound" id="play-sound" name="play-sound" checked>
                             <input type="checkbox" class="play-sound" id="play-sound" name="playsound" checked>
+
                         </div>
 
                         <input type="submit" class="button-2" value="Set Reminders" id="submit-plan">
@@ -104,12 +106,11 @@
     </section>
     <section id="main">
 
-        <!-- <div id="hero-image"> -->
 
         <div id="tips-main">
             <span id="times"></span>
         </div>
-        <!-- </div> -->
+
 
         <div class="modal-container" id="modal_reminder">
             <div class="modal">
