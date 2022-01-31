@@ -118,6 +118,7 @@ header {
     max-width: 100%;
     text-align: center;
     margin-top: 5rem;
+    transform: scale(0.8);
 }
 
 .modal h1 {
@@ -264,16 +265,7 @@ h2 {
     box-shadow: 3px 3px 5px rgb(66, 93, 62, 0.4);
 }
 
-/*Media queries*/
-
-@media screen and (max-width: 1200px) {
-
-    .modal {
-        transform: scale(0.8);
-    }
-
-}
-
+/*Media queries*/ 
 @media screen and (max-width: 768px) {
 
     #tips-main {
