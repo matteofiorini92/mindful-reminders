@@ -36,7 +36,7 @@
 
 ## Objective  
 
-Mindful Reminders is a platform that provides its user with the opportunity to integrate their wellness and mental health with their work routine. Studies show that practicing mindfulness can help employees manage mild depression, anxiety and other common mental health problems.
+Mindful Reminders is a platform that provides its user with the opportunity to integrate their wellness and mental health with their work routine. Studies show that practicing mindfulness can help employees manage mild depression, anxiety and other common mental health problems. Practicing mindfulness regularly helps train the brain, such that the brain can then drop into a mindful state easier. Mindful rReminders aims to 
 
 
 ## User Experience
@@ -182,6 +182,7 @@ Content to create the Mindful Tips and other research used in building the site 
 - [The Wellbeing Thesis](https://thewellbeingthesis.org.uk/foundations-for-success/stress/emotional-hi-jacking/)
 - [CALM](https://www.thecalmzone.net/issues/anxiety/)
 - [Mind](https://www.mind.org.uk/need-urgent-help/what-can-i-do-to-help-myself-cope/relaxing-and-calming-exercises/)
+- [Positive Psychology](https://positivepsychology.com/mindfulness-at-work/)
 
 
 ### Technologies Used  
@@ -197,5 +198,6 @@ Content to create the Mindful Tips and other research used in building the site 
 
 - The audio for the alerts on the site  were taken from [mixkit](https://mixkit.co/free-sound-effects/notification/).
 - The background image was taken from [Pexels](https://www.pexels.com/photo/bright-orange-foggy-sunrise-over-rough-hills-7192047/).
+- Three videos were taken from YouTube
 
 ### Acknowledgements  
