@@ -1,8 +1,7 @@
 # Mindful Reminders  
 
 ![am-i-responsive](assets/images/am-i-responsive-mr.png)
-[Link to Deployed Site](https://matteofiorini92.github.io/mindful-reminders/index.html)
-
+[Link to Deployed Site](https://matteofiorini92.github.io/mindful-reminders/)
   
 <!-- TOC -->
 
@@ -177,6 +176,9 @@ We adjusted the initial colour scheme to ensure it passed WCAG standards. Initia
 We also made sure to check all colours through the contrast checker to ensure maximum accessibility for users.
 
 ### Google Lighthouse Testing
+
+![Desktop Testing](assets/images/lighthouse-desktop.png)
+![Mobile Testing](assets/images/lighthouse-mobile.png)
 
 ## Deployment
 
