@@ -48,7 +48,7 @@ planForm.addEventListener('submit', (e) => {
   dayend = data['dayend'].value;
   modal_container.classList.remove('show');
   startReminderTimer();
-  getTime();
+  getTime(); // what is this for?
   saveUser();
 });
 
@@ -74,7 +74,7 @@ const startTimer = function () {
   };
   // Call the timer every second
   tick();
-  const timer = setInterval(tick, 60000);
+  const timer = setInterval(tick, 1000);
   return timer;
 };
 
@@ -112,7 +112,7 @@ const startReminderTimer = function () {
   };
   // Call the timer every second
   tick();
-  const timer = setInterval(tick, 60000);
+  const timer = setInterval(tick, 1000);
   return timer;
 };
 
@@ -211,7 +211,8 @@ const displayReminder = function (period) {
     } else if (period === "dayend") {
       contentDiv.innerHTML = `${getGreeting()} Lovely time of them all. Please proceed home!!!`;
     } else if (period === "morningbreak" || period === "afternoonbreak") {
-      let tipIndex = getTipToDisplay();
+      console.log(period)
+      const tipIndex = getTipToDisplay();
       contentDiv.innerHTML = `${tipsData[tipIndex].detail}`;
       tipsData[tipIndex].used = true;
     } else if (period === "water") {
@@ -233,9 +234,17 @@ function getTime() {
   const today = new Date();
   let hour = today.getHours() + '';
   let min = today.getMinutes() + '';
+  let sec = today.getSeconds() + '';
+  let result = '';
   hour = hour.length == 1 ? '0' + hour : hour;
   min = min.length == 1 ? '0' + min : min;
-  return hour + ":" + min;
+  console.log(sec)
+  if (sec === '0') {
+    result = hour + ":" + min; 
+  } else {
+    hour + ":" + min + ":" + sec;
+  }
+  return result;
 }
 
 function getGreeting(){
