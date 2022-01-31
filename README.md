@@ -1,14 +1,11 @@
-# Mindful Reminders
-[Link to Deployed Site](https://matteofiorini92.github.io/mindful-reminders/)
+# Mindful Reminders  
 
+![am-i-responsive](assets/images/am-i-responsive-mr.png)
+[Link to Deployed Site](https://matteofiorini92.github.io/mindful-reminders/)
   
 <!-- TOC -->
-<details>
-<summary>Table of Contents  </summary>
-<br>
 
 - [Mindful Reminders](#mindful-reminders)
-  - [Table of Contents](#table-of-contents)
   - [Objective](#objective)
   - [User Experience](#user-experience)
     - [User Stories](#user-stories)
@@ -20,8 +17,10 @@
     - [Schedule](#schedule)
     - [Mindful Tips](#mindful-tips)
     - [Reminders](#reminders)
+    - [Wellness Tips](#wellness-tips)
     - [Future Features](#future-features)
   - [Testing](#testing)
+    - [User Stories Testing](#user-stories-testing)
     - [Validator Testing](#validator-testing)
     - [Accessibility](#accessibility)
     - [Google Lighthouse Testing](#google-lighthouse-testing)
@@ -34,10 +33,6 @@
     - [Technologies Used](#technologies-used)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
-
-</details>
-
-
 
 <!-- /TOC -->
 
@@ -98,7 +93,7 @@ Upon opening the Homepage, the user is greeted with a form that allows them to e
 
 ![Plan your Day](https://media.giphy.com/media/nrtCbVxSF60PZLcksb/giphy.gif)
 
-The user will be alerted with a notification at these times. This encourages the user, for example, to take their lunch break which, 
+The user will be alerted with a notification at these times. This encourages the user, for example, to take their lunch break.
 
  These details are saved to local storage which saves the user from needing to enter each day; however, they have the option to amend this information by clicking the 'My Schedule' button in the navigation bar.
 
@@ -120,6 +115,16 @@ We have incorporated the 20/20/20 rule to prevent eyestrain. The user is alerted
 
 ![20/20/20](assets/images/20:20:20.png)
 
+And the user is reminded to stay hydrated!
+
+![Hydration](assets/images/hydration-alert.png)
+
+### Wellness Tips  
+
+A range of wellness facts are displayed at an interval of 10 minutes on the home screen.
+
+![Wellness](assets/images/home-screen-wellness.png)
+
 ### Future Features  
 
 Time constraints prevented us from building a site containing the full scope of ideas we came up with. Below are the features we would plan to implement in the future.
@@ -131,6 +136,22 @@ Time constraints prevented us from building a site containing the full scope of 
 - An option to share a particular tip, perhaps that the user found useful, with other colleagues or friends.
 
 ## Testing
+
+### User Stories Testing
+
+As a user I want to:
+
+- Integrate my work and my wellbeing.
+  - Mindful Reminders allows the user to add their schedule and receive mindful tips and reminders throughout their working day.  
+  
+- Have small, manageable wellness techniques I can practice seamlessly during my workday.
+  - The tips are bite-size can be performed depending on the length of time the user prefers.  
+  
+- Remember to take my breaks, for food and water.
+  - Reminders are sent out throughout the day to take breaks and drink water.  
+
+- Bring more structure into my personal and professional life.
+  - Scheduling allows the user to structure their wellbeing into their work routine.
 
 ### Validator Testing  
 
@@ -237,5 +258,10 @@ Content to create the Mindful Tips and other research used in building the site 
 - The audio for the alerts on the site  were taken from [mixkit](https://mixkit.co/free-sound-effects/notification/).
 - The background image was taken from [Pexels](https://www.pexels.com/photo/bright-orange-foggy-sunrise-over-rough-hills-7192047/).
 - Three videos were taken from YouTube
+  - [Guided Meditation](https://www.youtube.com/watch?v=KrxaWcw3i0Y)
+  - [Guided Imagery](https://www.youtube.com/watch?v=KrxaWcw3i0Y)
+  - [Binaural Beats](https://www.youtube.com/watch?v=OjLICbS-JMM)
 
 ### Acknowledgements  
+
+We would like to thank our amazing facilitator Abi Harrison who has been a great help throughout this Hackathon!
