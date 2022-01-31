@@ -63,7 +63,7 @@ header {
     font-weight: bold;
 }
 
-#menu li:hover {}
+/*#menu li:hover {}*/
 
 #menu a {
     color: #446040;
@@ -299,14 +299,15 @@ h2 {
 }
 
 @media screen and (max-width: 620px) {
-    /* iframe {
-        /* transform: scale(0.8); */
+    iframe {
+       /*transform: scale(0.8); */
     width: 420px;
     height: 270px;
 }
 
-*/
+
 }
+
 
 @media screen and (max-width: 576px) {
 
@@ -354,3 +355,4 @@ h2 {
     }
 
 }
+*/
