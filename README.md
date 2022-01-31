@@ -116,6 +116,10 @@ We have incorporated the 20/20/20 rule to prevent eyestrain. The user is alerted
 
 ![20/20/20](assets/images/20:20:20.png)
 
+And the user is reminded to stay hydrated!
+
+![Hydration](assets/images/hydration-alert.png)
+
 ### Wellness Tips  
 
 A range of wellness facts are displayed at an interval of 10 minutes on the home screen.
