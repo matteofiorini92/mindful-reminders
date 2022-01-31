@@ -156,6 +156,9 @@ We also made sure to check all colours through the contrast checker to ensure ma
 
 ### Google Lighthouse Testing
 
+![Desktop Testing](assets/images/lighthouse-desktop.png)
+![Mobile Testing](assets/images/lighthouse-mobile.png)
+
 ## Deployment
 
 ### GitHub Pages  
