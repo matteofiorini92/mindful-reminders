@@ -20,7 +20,7 @@ body {
 }
 
 #main {
-    height: 100vh;
+    height: 75vh;
 }
 
 
@@ -60,6 +60,7 @@ header {
     margin: 10px 10px;
     display: inline;
     letter-spacing: 5px;
+    font-weight: bold;
 }
 
 #menu li:hover {}
@@ -351,4 +352,5 @@ h2 {
         width: 270px;
         height: 170px;
     }
-} */
+
+}
