@@ -59,11 +59,10 @@ planForm.addEventListener('submit', (e) => {
 
 const startTimer = function () {
   const tick = function () {
-    let hour = Math.trunc(time / 3600); //.padStart(2, 0);
-    let min = Math.trunc((time % 3600) / 60); //.padStart(2, 0);
+    let hour = Math.trunc(time / 3600);
+    let min = Math.trunc((time % 3600) / 60);
     let sec = time % 60;
     // In each call, print the remaining time to UI, include hour if it is greater than 0
-    console.log(sec)
     if (sec !== 0) {
       min += 1;
     }
@@ -137,7 +136,7 @@ const init = function () {
   }
   displayWellnessFact();
   startTimer();
-}
+};
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -145,11 +144,11 @@ document.addEventListener("DOMContentLoaded", init);
 
 const refreshTips = () =>{
   tipsData.forEach((el) => el.used = false);
-}
+};
 
 const refreshWellenssFact = () =>{
   wellnessFactsData.forEach((el) => el.used = false);
-}
+};
 
 /* functions to get a random tip or wellness fact */
 
@@ -245,7 +244,7 @@ function getTime() {
   if (sec === '0') {
     result = hour + ":" + min; 
   } else {
-    hour + ":" + min + ":" + sec;
+    result = hour + ":" + min + ":" + sec;
   }
   return result;
 }
