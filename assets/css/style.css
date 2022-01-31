@@ -37,7 +37,7 @@ header {
     margin-top: 1rem;
     padding: 1rem;
     font-size: 3rem;
-    color: #446040;
+    color: #3c5438;
     font-family: 'Righteous';
     text-align: center;
 }
@@ -121,7 +121,7 @@ header {
     width: 600px;
     max-width: 100%;
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .modal h1 {
@@ -140,6 +140,10 @@ header {
     line-height: 1.6;
 }
 
+ul {
+    padding-top: 1rem;
+}
+
 li {
     font-size: 14px;
     color: #424741;
@@ -153,7 +157,7 @@ li {
 #modal_reminder {
     font-weight: bold;
     font-size: 150%;
-    color: rgb(126, 157, 122);
+    /* color: rgb(126, 157, 122); */
     font-family: 'Open Sans';
 }
 
@@ -207,7 +211,7 @@ h2 {
 
 #tips-main {
     background-color: rgb(66, 93, 62, 0.9);
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     border-radius: 35px;
     padding: 2rem;
@@ -257,11 +261,7 @@ h2 {
     display: inline-block;
     font-size: 25px;
     padding: 8px;
-    /* color: rgb(126, 157, 122);
-    border: 2px solid rgb(126, 157, 122); */
     color: #446040;
-    /* border: 2px solid #446040;
-    border-radius: 50%; */
 }
 
 .social-networks i:hover {
@@ -288,17 +288,24 @@ h2 {
         padding-top: 0;
     }
 
-    li {
+    /* li {
         font-size: 1.1rem;
+    } */
+
+    .modal {
+        transform: scale(0.9);
+
     }
 }
 
 @media screen and (max-width: 620px) {
-    iframe {
+    /* iframe {
         /* transform: scale(0.8); */
-        width: 420px;
-        height: 270px;
-    }
+    width: 420px;
+    height: 270px;
+}
+
+*/
 }
 
 @media screen and (max-width: 576px) {
@@ -307,10 +314,10 @@ h2 {
         font-size: 18px;
     }
 
-    iframe {
+    /* iframe {
         width: 380px;
         height: 250px;
-    }
+    } */
 }
 
 @media screen and (max-width: 526px) {
@@ -327,9 +334,13 @@ h2 {
         column-gap: 3rem;
         column-count: 2;
     }
+
+    .modal {
+        transform: scale(0.8);
+    }
 }
 
-@media screen and (max-width: 430px) {
+/* @media screen and (max-width: 430px) {
     iframe {
         width: 320px;
         height: 200px;
@@ -341,5 +352,5 @@ h2 {
         width: 270px;
         height: 170px;
     }
-}
 
+}

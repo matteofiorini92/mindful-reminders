@@ -272,7 +272,7 @@ export const tipsData = [{
     detail: `<h2>Guided Meditation</h2>
     <p>The Mayo Clinic states that meditation can give you a sense of calm, peace and balance that can benefit both your emotional well-being and your overall health.</p><br>
     <p>Take five minutes to listen to this guided meditation.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/inpok4MKVLM" title="YouTube video player" aria-label="Guided Meditation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/inpok4MKVLM" title="YouTube video player" aria-label="Guided Meditation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
   },
   {
     id: 28, // uniquely identify this tip
@@ -280,7 +280,7 @@ export const tipsData = [{
     detail: `<h2>Binaural Beats</h2>
     <p>A 2019 review of 22 studies found a significant link between more prolonged exposure to binaural beat tapes and reduced anxiety.</p>
     <p>Using headphones, take a few minutes, or as long as you have, to listen to the video below. The 528Hz frequency is thought to reduce stress and cortisol levels in the body.</p><br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OjLICbS-JMM" title="YouTube video player" aria-label="Binaural Beats Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/OjLICbS-JMM" title="YouTube video player" aria-label="Binaural Beats Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
   },
   {
     id: 29, // uniquely identify this tip
@@ -289,7 +289,7 @@ export const tipsData = [{
     <p>Guided Imagery can help you to learn how to detach yourself from the moment and relax.</p>
     <p>You can pratice this on your own or use the guided visualisation video below.</p>
     <p>Close your eyes or focus on a point and visualise a scene that puts you at ease. Practice some breathwork whilst you visualise and focus as you inhale and exhale.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrxaWcw3i0Y" title="YouTube video player" aria-label="Guided Imagery Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/KrxaWcw3i0Y" title="YouTube video player" aria-label="Guided Imagery Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `,
   },
 
@@ -300,59 +300,59 @@ export const tipsData = [{
 ];
 
 export const wellnessFactsData = [{
-  id: 0, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Laughing is good for the heart and can increase blood flow by 20 percent.`,
-},
-{
-  id: 1, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Exercise will give you more energy, even when you’re tired.`,
-},
-{
-  id: 2, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Yoga can boost your cognitive function and lower stress.`,
-},
-{
-  id: 3, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Walking outside – or spending time in green space – can reduce negative thoughts and boost self-esteem.`,
-},
-{
-  id: 4, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Drinking at least five glasses of water a day can reduce your chances of suffering from a heart attack by 40%.`,
-},
-{
-  id: 5, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Research has found that taking a break can be very beneficial for you and your work.  Micro-breaks, lunchtime breaks and longer breaks, have all been shown to have a positive relationship with wellbeing and productivity. By taking regular breaks you can boost your performance.`,
-},
-{
-  id: 6, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `Want to slow the aging process? Meditation is proven to help!`,
-},
-{
-  id: 7, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `"Tension is who you think you should be. Relaxation is who you are." -- Chinese Proverb`,
-},
-{
-  id: 8, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `"The time to relax is when you don't have time for it." -- Sydney Harris`,
-},
-{
-  id: 9, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `"Your calm mind is the ultimate weapon against your challenges. So relax." -- Bryant McGill`,
-},
-{
-  id: 10, // uniquely identify this tip
-  used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
-  detail: `"Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor." -- Thich Nhat Hanh`,
-},
+    id: 0, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Laughing is good for the heart and can increase blood flow by 20 percent.`,
+  },
+  {
+    id: 1, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Exercise will give you more energy, even when you’re tired.`,
+  },
+  {
+    id: 2, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Yoga can boost your cognitive function and lower stress.`,
+  },
+  {
+    id: 3, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Walking outside – or spending time in green space – can reduce negative thoughts and boost self-esteem.`,
+  },
+  {
+    id: 4, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Drinking at least five glasses of water a day can reduce your chances of suffering from a heart attack by 40%.`,
+  },
+  {
+    id: 5, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Research has found that taking a break can be very beneficial for you and your work.  Micro-breaks, lunchtime breaks and longer breaks, have all been shown to have a positive relationship with wellbeing and productivity. By taking regular breaks you can boost your performance.`,
+  },
+  {
+    id: 6, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `Want to slow the aging process? Meditation is proven to help!`,
+  },
+  {
+    id: 7, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `"Tension is who you think you should be. Relaxation is who you are." -- Chinese Proverb`,
+  },
+  {
+    id: 8, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `"The time to relax is when you don't have time for it." -- Sydney Harris`,
+  },
+  {
+    id: 9, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `"Your calm mind is the ultimate weapon against your challenges. So relax." -- Bryant McGill`,
+  },
+  {
+    id: 10, // uniquely identify this tip
+    used: false, // already displayed tip will be true and used to filter and ensure tips are not repeated
+    detail: `"Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor." -- Thich Nhat Hanh`,
+  },
 
 ];
